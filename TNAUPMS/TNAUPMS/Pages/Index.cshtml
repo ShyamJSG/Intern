@@ -1,0 +1,72 @@
+﻿@page
+@model TNAUPMS.Pages.IndexModel
+@using Microsoft.AspNetCore.Antiforgery
+@addTagHelper *, Microsoft.AspNetCore.Mvc
+@inject IAntiforgery antiforgery
+
+
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+@{ Layout = null; }
+
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="assets/media/image/favicon.ico" />
+    <link rel="stylesheet" href="vendors/bundle.css" type="text/css">
+    <link rel="stylesheet" href="vendors/datepicker/daterangepicker.css">
+    <link rel="stylesheet" href="vendors/slick/slick.css">
+    <link rel="stylesheet" href="vendors/slick/slick-theme.css">
+    <link rel="stylesheet" href="vendors/vmap/jqvmap.min.css">
+    <link rel="stylesheet" href="assets/css/app.min.css" type="text/css">
+</head>
+<body style="background-color: #dff8e5; background-image:url(./assets/media/tnau.jpg) ; background-repeat:no-repeat; background-size:cover;" class="form-membership">
+
+        <!-- begin::page loader-->
+        <div class="page-loader">
+            <div class="spinner-border"></div>
+        </div>
+        <!-- end::page loader -->
+
+        <div class="form-wrapper">
+
+            <!-- logo -->
+            <div class="logo">
+                <img src="assets/media/image/logo-sm.png" style="width:100px;" alt="image">
+            </div>
+            <!-- ./ logo -->
+
+            <h5>Sign in</h5>
+
+            <!-- form -->
+           <form method="post" asp-page="Index">
+                <div class="form-group">
+                    <input type="text" asp-for="@Model.Username" class="form-control" placeholder="Username or email" required autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" asp-for="@Model.Password" placeholder="Password" required>
+                </div>
+                <div class="form-group d-flex justify-content-between">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" checked="" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Remember me</label>
+                    </div>
+                    <a href="recover-password.html">Reset password</a>
+                </div>
+              <input type="submit" class="button" value="Sign In">
+              <div><lable style="color:red;">@Model.Msg</lable></div>
+            </form>
+            <!-- ./ form -->
+
+        </div>
+
+        <!-- Plugin scripts -->
+        <script src="vendors/bundle.js"></script>
+
+        <!-- App scripts -->
+        <script src="assets/js/app.min.js"></script>
+    </body>
+
+    <!-- Mirrored from nextable.laborasyon.com/default/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Aug 2022 12:15:36 GMT -->
+</html>

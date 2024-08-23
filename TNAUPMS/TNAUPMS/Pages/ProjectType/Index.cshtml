@@ -1,0 +1,141 @@
+﻿@page
+@model TNAUPMS.Pages.ProjectTypeMaster
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+@{ Layout = "../Shared/_Layoutadmin.cshtml"; }
+<div class="header-body">
+    <div class="header-body-left">
+        <h3 class="page-title">Project Type Master</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div style="margin:5px;">
+                    <button class="btn btn-sm btn-primary booking" data-toggle="modal" data-target="#projecttype-modal">New Project Type</button>
+                </div>
+                  <span>@Model.displaymsg</span>
+                <br>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">Code</th>
+                                <th scope="col">ProjectTypeName</th>
+                                <th scope="col">Option</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null)
+                            {
+                                foreach (var item in Model.proModel)
+                                {
+
+                                    <tr>
+                                        <td>@Html.DisplayFor(modelItem => item.code)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.projectType)</td>
+                                         <td style="text-align: center;"><button class="btn btn-sm btn-success details" data-id="@item.id" data-bs-toggle="modal" data-bs-target="#details-modal"><i class="fa fa-edit"></i></button> 
+                                            <form method="post" asp-page="Index" asp-route-id="@item.id" asp-page-handler="Delete" onsubmit="return jQueryModalDelete(this)" class="d-inline">
+                                                <button type="submit" class="btn btn-sm btn-danger text-white"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="details-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Project Type</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="detail-modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+<form method="post" asp-page-handler="Create">
+    <div class="modal fade" tabindex="-1" role="dialog" id="projecttype-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project Type Master</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table id="projecttype" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Code</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.Code" data-val-required="The Code is required." class="form-control" id="Code" name="Code">
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Name </td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.ProjectTypeName" data-val-required="The Project Type Name is required." class="form-control" id="ProjectTypeName" name="ProjectTypeName">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button class="btn btn-sm btn-success">Submit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<script src="~/assets/js/jquery.min.js"></script>
+<script src="~/assets/js/jquery.validate.js"></script>
+<script src="~/assets/js/jquery.validate.unobtrusive.js"></script>
+
+<script>
+    $(function () {
+        $('button.details').on('click', function () {
+             var id = $(this).attr('data-id');
+             $.ajax({
+            type: 'POST',
+            url: 'projecttype?handler=EditInfo',
+            data: {
+                id: id,
+            },
+            headers: {
+                RequestVerificationToken:
+                    $('input:hidden[name="__RequestVerificationToken"]').val()
+            },
+            success: function (result) {
+                $('.detail-modal-body').html(result);
+                $('#details-modal').modal('show');
+            }
+        });
+
+
+        });
+    })
+</script>
+
+

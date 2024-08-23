@@ -1,0 +1,44 @@
+﻿@model TNAUPMS.masdepartment
+@{
+    <div class="modal-content">
+        <form method="post" asp-page-handler="Edit">
+            <div class="modal-body">
+                <table id="deptTable" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Code</td>
+                            <td>
+                                <input type="hidden" asp-for="@Model.id" id="id" name="id">
+                                <input type="text" data-val="true" asp-for="@Model.code" data-val-required="The Code is required." class="form-control" id="code" name="code">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Directorate Name</td>
+                            <td>
+                                <input type="text" data-val="true" asp-for="@Model.departmentName" data-val-required="The Directorate Name is required." class="form-control" id="departmentName" name="departmentName">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Directorate Head</td>
+                            <td>
+                                <input type="text" data-val="true" asp-for="@Model.directorName" data-val-required="The Director Name is required." class="form-control" id="directorName" name="directorName">
+                            </td>
+                        </tr>
+                          <tr>
+                            <td>Mobile No</td>
+                            <td>
+                                <input type="text" data-val="true" asp-for="@Model.directorMobileNo" data-val-required="The Director Mobile No is required." class="form-control" id="directorMobileNo" name="directorMobileNo">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="btn btn-sm btn-success">Submit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </form>
+    </div>
+}

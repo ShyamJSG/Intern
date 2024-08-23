@@ -1,0 +1,170 @@
+﻿@page
+@model TNAUPMS.Pages.ProjectTask
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+
+@{ Layout = "Shared/_Layoutadmin.cshtml"; }
+
+
+<div class="header-body">
+    <div class="header-body-left">
+        <h3 class="page-title">Project Task Creation</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+         <div class="form-group">
+             <label for="projectCode">Project Name </label>
+             <select class="form-control" id="exampleFormControlSelect1">
+                    <option>-- Select --</option>
+                    <option>Grami Krishi Mosham Seva</option>
+                    <option>FASAL </option>
+                    <option>Permanent Manuria Experiment on Rice based cropping system</option>
+              </select>
+         </div>
+         <div style="margin:15px;">
+              <button class="btn btn-sm btn-primary booking" data-toggle="modal" data-target="#task-modal">New Task</button>
+              <br />
+         </div>
+    </div>
+    <div class="col-md-6">
+       <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Scientist:</label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail"value="Dr.K.Manikandan">
+            </div>
+        </div>
+       <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Directorate:</label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail"value="Directorate of Crop Management">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+             <div class="table-responsive">
+                    <table class="table">
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">SNo</th>
+                                <th scope="col">Task Name</th>
+                                <th scope="col">Assigned To</th>
+                                <th scope="col">Reviewer</th>
+                                <th scope="col">Start Date</th>
+                                <th scope="col">End Date</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Soil sample collection and analysis</td>
+                                <td>Dr.K.Manikandan</td>
+                                <td>Director</td>
+                                <td>01-Apr-2022</td>
+                                <td>30-May-2022</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Incubation studies</td>
+                                <td>Dr.K.Manikandan</td>
+                                <td>Director</td>
+                                <td>01-Jun-2022</td>
+                                <td>30-Sep-2022</td>
+                                <td>On Process</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Glass house studies </td>
+                                <td>Dr.K.Manikandan</td>
+                                <td>Director</td>
+                                <td>01-Oct-2022</td>
+                                <td>30-Dec-2022</td>
+                                <td>Not yet Started</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Field experiments </td>
+                                <td>Dr.K.Manikandan</td>
+                                <td>Director</td>
+                                <td>01-Jan-2023</td>
+                                <td>30-Apr-2023</td>
+                                <td>Not yet Started</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Report preparation & submission</td>
+                                <td>Dr.K.Manikandan</td>
+                                <td>Director</td>
+                                <td>01-May-2023</td>
+                                <td>30-Jun-2023</td>
+                                <td>Not yet Started</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+    </div>
+</div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="task-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">New Task Creation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table id="crcbooking" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Task Name</td>
+                                <td>
+                                    <input type="text" class="form-control">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Task Information</td>
+                                <td> <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Assiged To</td>
+                                <td><select class="form-control" id="">
+                                <option>-- Select --</option>
+                                <option>Dr.K.Manikandan</option>
+                                <option>Dr.Ramsaran</option>
+                                <option>Dr.Velrajan</option>
+                                <option>SDr.umathi</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td>Reviewer</td>
+                                <td><input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Director"></td>
+                            </tr>
+                            <tr>
+                                <td>Start Date</td>
+                                <td><input type="date" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>End date</td>
+                                <td><input type="date" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button class="btn btn-sm btn-success">Submit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>

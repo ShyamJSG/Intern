@@ -1,0 +1,188 @@
+﻿@page
+@model TNAUPMS.Pages.Institution
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+
+@{ Layout = "../Shared/_Layoutadmin.cshtml"; }
+<div class="header-body">
+    <div class="header-body-left">
+        <h3 class="page-title">Institute Master</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div style="margin:5px;">
+                    <button class="btn btn-sm btn-primary booking" data-toggle="modal" data-target="#division-modal">New Institute</button>
+                </div>
+                <span>@Model.displaymsg</span>
+                <br>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">Code</th>
+                                <th scope="col">Institution Name</th>
+                                <th scope="col">City</th>
+                                <th scope="col">Head Name</th>
+                                <th scope="col">Contact No</th>
+                                <th scope="col">Option</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null)
+                            {
+                                foreach (var item in Model.insModel)
+                                {
+                                    <tr>
+                                        <td style="text-align: center;">@Html.DisplayFor(modelItem => item.code)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.instituteName)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.city)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.principalName)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.principalMobileNo)</td>
+                                        <td style="text-align: center;"><button class="btn btn-sm btn-success details" data-id="@item.id" data-bs-toggle="modal" data-bs-target="#details-modal">Edit</button> </td>
+                                    </tr>
+                                }
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="details-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Institute Master</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="detail-modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<form method="post" asp-page-handler="Create">
+    <div class="modal fade" tabindex="-1" role="dialog" id="division-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Institute Master</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table id="institution" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Code</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.Code" data-val-required="The Institute Short Name is required." class="form-control" id="Code" name="Code">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.InstituteName" data-val-required="The Institute Name is required." class="form-control" id="InstituteName" name="InstituteName">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.Address" data-val-required="The Address is required." class="form-control" id="Address" name="Address">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.City" data-val-required="The City Name is required." class="form-control" id="City" name="City">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>District</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.District" data-val-required="The District Name is required." class="form-control" id="District" name="District">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Pincode</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.Pincode" data-val-required="The Pin Number is required." class="form-control" id="Pincode" name="Pincode">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Head Name</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.PrincipalName" data-val-required="The Principal Name is required." class="form-control" id="PrincipalName" name="PrincipalName">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Head Email</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.PrincipalEmail" data-val-required="The Email Id is required." class="form-control" id="PrincipalEmail" name="PrincipalEmail">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Contact No</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.PrincipalMobileNo" data-val-required="The Mobile No is required." class="form-control" id="PrincipalMobileNo" name="PrincipalMobileNo">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td><button class="btn btn-sm btn-success">Submit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<script src="~/assets/js/jquery.min.js"></script>
+<script src="~/assets/js/jquery.validate.js"></script>
+<script src="~/assets/js/jquery.validate.unobtrusive.js"></script>
+
+<script>
+    $(function () {
+        $('button.details').on('click', function () {
+             var id = $(this).attr('data-id');
+             $.ajax({
+            type: 'POST',
+            url: 'institute?handler=EditInfo',
+            data: {
+                id: id,
+            },
+            headers: {
+                RequestVerificationToken:
+                    $('input:hidden[name="__RequestVerificationToken"]').val()
+            },
+            success: function (result) {
+                $('.detail-modal-body').html(result);
+                $('#details-modal').modal('show');
+            }
+        });
+
+
+        });
+    })
+</script>
+
+

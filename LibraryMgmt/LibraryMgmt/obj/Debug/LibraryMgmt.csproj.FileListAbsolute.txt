@@ -1,0 +1,17 @@
+D:\Intern\LibraryMgmt\LibraryMgmt\obj\Debug\LibraryMgmt.csproj.AssemblyReference.cache
+D:\Intern\LibraryMgmt\LibraryMgmt\obj\Debug\LibraryMgmt.Login.resources
+D:\Intern\LibraryMgmt\LibraryMgmt\obj\Debug\LibraryMgmt.Properties.Resources.resources
+D:\Intern\LibraryMgmt\LibraryMgmt\obj\Debug\LibraryMgmt.csproj.GenerateResource.cache
+D:\Intern\LibraryMgmt\LibraryMgmt\obj\Debug\LibraryMgmt.csproj.CoreCompileInputs.cache
+D:\Intern\LibraryMgmt\LibraryMgmt\bin\Debug\LibraryMgmt.exe.config
+D:\Intern\LibraryMgmt\LibraryMgmt\bin\Debug\LibraryMgmt.exe
+D:\Intern\LibraryMgmt\LibraryMgmt\bin\Debug\LibraryMgmt.pdb
+D:\Intern\LibraryMgmt\LibraryMgmt\obj\Debug\LibraryMgmt.exe
+D:\Intern\LibraryMgmt\LibraryMgmt\obj\Debug\LibraryMgmt.pdb
+D:\Intern\LibraryMgmt\LibraryMgmt\obj\Debug\LibraryMgmt.Home.resources
+D:\Intern\LibraryMgmt\LibraryMgmt\obj\Debug\LibraryMgmt.AddBook.resources
+D:\Intern\LibraryMgmt\LibraryMgmt\obj\Debug\LibraryMgmt.Lend.resources
+D:\Intern\LibraryMgmt\LibraryMgmt\obj\Debug\LibraryMgmt.Edit.resources
+D:\Intern\LibraryMgmt\LibraryMgmt\obj\Debug\LibraryMgmt.Issue.resources
+D:\Intern\LibraryMgmt\LibraryMgmt\obj\Debug\LibraryMgmt.Register.resources
+D:\Intern\LibraryMgmt\LibraryMgmt\obj\Debug\LibraryMgmt.Remove.resources

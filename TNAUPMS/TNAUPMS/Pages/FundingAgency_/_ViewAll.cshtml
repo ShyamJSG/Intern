@@ -1,0 +1,80 @@
+﻿@using TNAUPMS
+@model IEnumerable<masfundingagency>
+<table class="table table-bordered" id="customerTable">
+    <thead>
+        <tr>
+            <th>
+                SNo
+            </th>
+            <th>
+                Funding Agency Name
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Count() != 0)
+        {
+            @foreach (var fam in Model)
+            {
+        <tr>
+            <td>
+                @fam.id
+            </td>
+            <td>
+                @fam.fundingAgency
+            </td>
+            <td text-right">
+                <button class="btn btn-sm btn-success details" data-id="@fam.id" data-bs-toggle="modal" data-bs-target="#details-modal">Address Info</button> 
+
+                <form method="post" asp-page="Index" asp-route-id="@fam.id" asp-page-handler="Delete" onsubmit="return jQueryModalDelete(this)" class="d-inline">
+                    <button type="submit" class="btn btn-danger text-white"> Delete</button>
+                </form>
+            </td>
+        </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="details-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Creation</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="detail-modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#FundTable").DataTable();
+    });
+
+     $('button.details').on('click', function () {
+                alert (1);
+                 var id = $(this).attr('data-id');
+                 $.ajax({
+                type: 'POST',
+                url: 'fundingagency?handler=CreateOrEdit',
+                data: {
+                    id: id,
+                },
+                headers: {
+                    RequestVerificationToken:
+                        $('input:hidden[name="__RequestVerificationToken"]').val()
+                },
+                success: function (result) {
+                    $('.detail-modal-body').html(result);
+                    $('#details-modal').modal('show');
+                }
+            });
+</script>

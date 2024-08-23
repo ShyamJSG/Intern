@@ -1,0 +1,14 @@
+D:\Intern\LibraryMgmt\bin\Debug\net8.0\LibraryMgmt.exe
+D:\Intern\LibraryMgmt\bin\Debug\net8.0\LibraryMgmt.deps.json
+D:\Intern\LibraryMgmt\bin\Debug\net8.0\LibraryMgmt.runtimeconfig.json
+D:\Intern\LibraryMgmt\bin\Debug\net8.0\LibraryMgmt.dll
+D:\Intern\LibraryMgmt\bin\Debug\net8.0\LibraryMgmt.pdb
+D:\Intern\LibraryMgmt\obj\Debug\net8.0\LibraryMgmt.GeneratedMSBuildEditorConfig.editorconfig
+D:\Intern\LibraryMgmt\obj\Debug\net8.0\LibraryMgmt.AssemblyInfoInputs.cache
+D:\Intern\LibraryMgmt\obj\Debug\net8.0\LibraryMgmt.AssemblyInfo.cs
+D:\Intern\LibraryMgmt\obj\Debug\net8.0\LibraryMgmt.csproj.CoreCompileInputs.cache
+D:\Intern\LibraryMgmt\obj\Debug\net8.0\LibraryMgmt.dll
+D:\Intern\LibraryMgmt\obj\Debug\net8.0\refint\LibraryMgmt.dll
+D:\Intern\LibraryMgmt\obj\Debug\net8.0\LibraryMgmt.pdb
+D:\Intern\LibraryMgmt\obj\Debug\net8.0\LibraryMgmt.genruntimeconfig.cache
+D:\Intern\LibraryMgmt\obj\Debug\net8.0\ref\LibraryMgmt.dll

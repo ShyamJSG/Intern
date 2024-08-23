@@ -1,0 +1,173 @@
+﻿@page
+@model TNAUPMS.Pages.Project
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+
+@{ Layout = "Shared/_Layoutadmin.cshtml"; }
+<div class="header-body">
+    <div class="header-body-left">
+        <h3 class="page-title" Project Master></h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div style="margin:15px;">
+                    <button class="btn btn-sm btn-primary booking" data-toggle="modal" data-target="#division-modal">New Project</button>
+                    <br />
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">SNo</th>
+                                <th scope="col">ProjectCode</th>
+                                <th scope="col">ProjectName</th>
+                                <th scope="col">Deparment Name</th>
+                                <th scope="col">Funding Agency</th>
+                                <th scope="col">Investigator</th>
+                                <th scope="col">Options</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null)
+                            {
+                            foreach (var item in Model.pjModel)
+                            {
+
+                            <tr>
+                                <td style="text-align: center;">@Html.DisplayFor(modelItem => item.id)</td>
+                                <td>@Html.DisplayFor(modelItem => item.projectCode)</td>
+                                <td>@Html.DisplayFor(modelItem => item.projectName)</td>
+                                <td>@Html.DisplayFor(modelItem => item.deptName)</td>
+                                <td>@Html.DisplayFor(modelItem => item.fundingAgencyName)</td>
+                                <td>@Html.DisplayFor(modelItem => item.principalInvestigator)</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-success details" data-id="@item.id" data-bs-toggle="modal" data-bs-target="#details-modal">Edit</button> </td>
+                            </tr>
+                            }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form method="post" asp-page-handler="Create">
+    <div class="modal fade" tabindex="-1" role="dialog" id="division-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project Master</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table id="project" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td>ProjectCode</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.ProjectCode" data-val-required="The Project Code is required." class="form-control" id="ProjectCode" name="ProjectCode">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ProjectName</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.ProjectName" data-val-required="The Project Name is required." class="form-control" id="ProjectName" name="ProjectName">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Dept Name</td>
+                                <td>
+                                    <select name="DeptId" asp-for="@Model.DepartmentId" asp-items="Model.DeptList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Institute Name</td>
+                                <td>
+                                    <select name="Id" asp-for="@Model.InstituteId" asp-items="Model.InsList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Science Name</td>
+                                <td>
+                                    <select name="Id" asp-for="@Model.ScienceId" asp-items="Model.SceList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Science Meet Name</td>
+                                <td>
+                                    <select name="Id" asp-for="@Model.ScienceMeetId" asp-items="Model.SciList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Project Type Name</td>
+                                <td>
+                                    <select name="Id" asp-for="@Model.ProjectTypeId" asp-items="Model.ProList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Project Sub Type Name</td>
+                                <td>
+                                    <select name="Id" asp-for="@Model.ProjectSubTypeId" asp-items="Model.ProsList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Funding Agency Name</td>
+                                <td>
+                                    <select name="Id" asp-for="@Model.FundingAgencyId" asp-items="Model.FundList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Principal Investigator</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.PrincipalInvestigator" data-val-required="The Principal Investigator Name is required." class="form-control" id="PrincipalInvestigator" name="PrincipalInvestigator">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Budget</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.Budget" data-val-required="Budget Value is required." class="form-control" id="Budget" name="Budget">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Objective</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.Objective" data-val-required="The Objective Name is required." class="form-control" id="Objective" name="Objective">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Methodology</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.Methodology" data-val-required="Methodology is required." class="form-control" id="Methodology" name="Methodology">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Output</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.Output" data-val-required="The Output is required." class="form-control" id="Output" name="Output">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td><button class="btn btn-sm btn-success">Submit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</form>

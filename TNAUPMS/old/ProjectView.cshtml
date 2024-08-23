@@ -1,0 +1,69 @@
+﻿@page
+@model TNAUPMS.Pages.ProjectView
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+
+@{ Layout = "Shared/_Layoutadmin.cshtml"; }
+<div class="header-body">
+    <div class="header-body-left">
+        <h3 class="page-title">Project List</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div style="margin:15px;">
+                     <button class="btn-sm btn-primary" asp-area="" asp-page="/ProjectNew" >New Project</button>
+                    <br />
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">SNo</th>
+                                <th scope="col">Project Name</th>
+                                <th scope="col">Investigator</th>
+                                <th scope="col">Institute Name</th>
+                                <th scope="col">Funding Agency</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Salt affected soils in Thoothugudi</td>
+                                <td>Dr.K.Manikandan</td>
+                                <td>TNAU-Killikulam</td>
+                                <td>TNAU</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Development of an Automatic Nursery Tray Seeder for SRI</td>
+                                <td>Dr.Selvaraj</td>
+                                <td>TNAU - CBE</td>
+                                <td>State Govt</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Power Weeder for Weeding on Ridges and Furrows</td>
+                                <td>Dr.Chellaiah</td>
+                                <td>TNAU-MDU</td>
+                                <td>Union Govt</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Controlled Atmosphere Storage for selected pulses</td>
+                                <td>Dr.Rajkumar</td>
+                                <td>TNAU - CBE</td>
+                                <td>State Govt</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

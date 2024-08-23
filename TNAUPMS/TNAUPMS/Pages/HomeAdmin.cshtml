@@ -1,0 +1,335 @@
+﻿@page
+@model TNAUPMS.Pages.HomeAdmin
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+
+@{ Layout = "Shared/_Layoutadmin.cshtml"; }
+<div class="header-body">
+    <div class="header-body-left">
+        <h3 class="page-title">Dashboard / Project Analytics</h3>
+    </div>
+</div>
+
+
+@* <div class="row">
+    <div class="col-xl-6 col-md-12">
+       
+        @* <div class="row">
+            <div class="col-xl-6 col-md-12">
+                <div class="card">
+                    <div class="card-header">Total Customers</div>
+                    <div class="card-body text-center">
+                        <div class="mb-2">
+                            <span class="bar-1">2,5,9,6,5,2,4,3,7,5</span>
+                        </div>
+                        <div class="font-size-40 mb-2 font-weight-bold text-primary">1.241</div>
+                        <p class="m-b-0">
+                            <i class="fa fa-caret-up text-primary m-r-5"></i> 23% increase in Last week
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-md-12">
+                <div class="card">
+                    <div class="card-header">Average Order Value</div>
+                    <div class="card-body text-center">
+                        <div class="mb-2">
+                            <span class="bar-3">2,5,9,6,5,2,4,3,7,5</span>
+                        </div>
+                        <div class="font-size-40 mb-2 font-weight-bold text-success">$732.52</div>
+                        <p class="m-b-0">
+                            <i class="fa fa-caret-down text-danger m-r-5"></i> 4 lead less than last week
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                Sales Channels
+                <ul class="list-inline">
+                    <li class="list-inline-item mb-0">
+                        <a href="#" class="js-card-refresh link-1">
+                            <i class="fa fa-refresh"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <div class="dropdown">
+                            <a href="#" class="link-1" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a href="#" class="dropdown-item">Action</a>
+                                <a href="#" class="dropdown-item">Another action</a>
+                                <a href="#" class="dropdown-item">Something else here</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="mb-5 text-center">
+                    <div class="position-relative">
+                        <div id="sales-circle-graphic" class="circle"></div>
+                        <div class="position-absolute a-0 d-flex flex-column align-items-center justify-content-center">
+                            <h3 class="m-b-0">65%</h3>
+                            <span class="font-size-11 text-uppercase">Average</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h6>Google</h6>
+                    <div class="d-flex align-items-center">
+                        <div class="progress flex-grow-1" style="height: 5px">
+                            <div class="progress-bar bg-google" role="progressbar" style="width: 42%;"
+                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="small m-l-10">42%</span>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h6>Instagram</h6>
+                    <div class="d-flex align-items-center">
+                        <div class="progress flex-grow-1" style="height: 5px">
+                            <div class="progress-bar bg-instagram" role="progressbar" style="width: 34%;"
+                                 aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="small m-l-10">34%</span>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h6>Whatsapp</h6>
+                    <div class="d-flex align-items-center">
+                        <div class="progress flex-grow-1" style="height: 5px">
+                            <div class="progress-bar bg-whatsapp" role="progressbar" style="width: 60%;"
+                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="small m-l-10">60%</span>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h6>Facebook</h6>
+                    <div class="d-flex align-items-center">
+                        <div class="progress flex-grow-1" style="height: 5px">
+                            <div class="progress-bar bg-facebook" role="progressbar" style="width: 20%;"
+                                 aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="small m-l-10">20%</span>
+                    </div>
+                </div>
+                <div>
+                    <h6>Linkedin</h6>
+                    <div class="d-flex align-items-center">
+                        <div class="progress flex-grow-1" style="height: 5px">
+                            <div class="progress-bar bg-linkedin" role="progressbar" style="width: 30%;"
+                                 aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="small m-l-10">30%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6 col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">Regional Sales</h6>
+                <canvas id="chart_demo_9"></canvas>
+                <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <h5 class="font-size-23 text-primary font-weight-bold">$134.234,076</h5>
+                        <h6 class="text-uppercase font-size-11 mb-0">Total Sales</h6>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <h5 class="font-size-23 text-warning font-weight-bold">$1.620,076</h5>
+                        <h6 class="text-uppercase font-size-11 mb-0">Average</h6>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <h5 class="font-size-23 text-danger font-weight-bold">$20,076</h5>
+                        <h6 class="text-uppercase font-size-11 mb-0">Return</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-body d-flex justify-content-between align-items-center flex-lg-row">
+                    <span>
+                        <span class="icon-block bg-success icon-block-floating icon-block-sm m-r-10">
+                            <i class="fa fa-download font-size-16"></i>
+                        </span>
+                        Report prepared. You can download it now
+                    </span>
+                    <a href="#" class="btn btn-sm btn-light btn-uppercase">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Product Sales</div>
+            <div class="card-body">
+                <div class="m-b-20 d-flex align-items-center">
+                    <div class="icon-block icon-block-outline-success icon-block-floating m-r-10">
+                        <i class="fa fa-cube font-size-18"></i>
+                    </div>
+                    <h2 class="m-0 font-weight-bold">65,353</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="m-b-10">
+                            4,324
+                            <small class="text-uppercase font-size-11 m-l-5">Total Price</small>
+                        </h3>
+                        <div class="progress m-b-10" style="height: 5px;">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <i class="fa fa-caret-up text-success"></i> 10% decrease
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="m-b-10">
+                            2,214
+                            <small class="text-uppercase font-size-11 m-l-5">Total Stock</small>
+                        </h3>
+                        <div class="progress m-b-10" style="height: 5px;">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <i class="fa fa-caret-down text-danger"></i> 14% increases
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Purchase Status</div>
+            <div class="card-body">
+                <div class="m-b-20 d-lg-flex justify-content-between align-items-center">
+                    <ul class="list-inline m-l-5">
+                        <li class="list-inline-item text-uppercase font-size-11">
+                            <i class="fa fa-circle text-success m-r-5"></i> Success
+                        </li>
+                        <li class="list-inline-item text-uppercase font-size-11">
+                            <i class="fa fa-circle text-danger m-r-5"></i> Return
+                        </li>
+                    </ul>
+                    <div class="reportrange btn btn-outline-light">
+                        <i class="ti-calendar m-r-10"></i>
+                        <span></span>
+                        <i class="ti-angle-down m-l-10"></i>
+                    </div>
+                    <div class="d-lg-none d-sm-block mb-4"></div>
+                </div>
+                <canvas id="chart_demo_3"></canvas>
+                <div class="row mt-4">
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="card card-body text-success bg-success-bright text-center mb-2">
+                            <h5 class="font-size-23 font-weight-bold">$234.076</h5>
+                            <h6 class="text-uppercase font-size-11 m-b-0">Total Sales</h6>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="card card-body bg-danger-bright text-danger text-center mb-2">
+                            <h5 class="font-size-23 font-weight-bold">$20.076</h5>
+                            <h6 class="text-uppercase font-size-11 m-b-0">Return</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ *@
+
+
+
+<div>
+    <div class="d-flex justify-content-around flex-wrap" style="margin-top:12px;margin-bottom:12px">
+        <div class="card" style="width: 15rem; margin: 10px; background-color:#F6F6F6">
+            <div class="card-header font-size-12 ">Total no of Projects</div>
+            <div class="card-body text-center">
+                <div class="font-size-40 mb-2 font-weight-bold">457</div>
+            </div>
+        </div>
+        <div class="card" style="width: 15rem; margin: 10px; background-color:#FFE2E2">
+            <div class="card-header font-size-12">Projects completed this Year</div>
+            <div class="card-body text-center">
+                <div class="font-size-40 mb-2 font-weight-bold">38</div>
+            </div>
+        </div>
+        <div class="card" style="width: 15rem; margin: 10px; background-color:#FFC7C7">
+            <div class="card-header font-size-12">Total no of Proposed Projects</div>
+            <div class="card-body text-center">
+                <div class="font-size-40 mb-2 font-weight-bold">107</div>
+            </div>
+        </div>
+        <div class="card" style="width: 15rem; margin: 10px;background-color:#AAAAAA">
+            <div class="card-header font-size-12">Yet to be Completed this Year</div>
+            <div class="card-body text-center">
+                <div class="font-size-40 mb-2 font-weight-bold">40</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="d-flex justify-content-around flex-wrap">
+            <div style="width: 59%; margin: 10px;">
+                <div class="card">
+                    <div class="card-header font-size-12">Funding Report</div>
+                    <div class="card-body">
+                        <div class="row mb-4">
+                            <div class="col-xl-12 col-md-12 text-primary">
+                                <h6 class="text-uppercase font-size-11">Funding Amount:</h6>
+                            </div>
+                        </div>
+                        <canvas id="chart_demo_1"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 31%; margin: 10px;">
+                <div class="card">
+                    <div class="card-header font-size-12">Project Status</div>
+                    <div class="card-body">
+                        <div class="row mb-4">
+                            <div class="col-xl-12 col-md-12 text-primary">
+                                <h6 class="text-uppercase font-size-11">Progress:</h6>
+                            </div>
+                        </div>
+                        <canvas id="chart_demo_7"></canvas>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<div>
+    <div class="d-flex justify-content-around flex-wrap">
+        <div style="width: 31%; margin: 10px;margin-top:18px">
+            <div class="card">
+                <div class="card-header font-size-12">Article Status</div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-xl-12 col-md-12 text-primary">
+                            <h6 class="text-uppercase font-size-11">Count:</h6>
+                        </div>
+                    </div>
+                    <canvas id="chart_demo_2"></canvas>
+                </div>
+            </div>
+        </div>
+        <div style="width: 60%; margin: 10px;">
+            <div class="card">
+                <div class="card-header font-size-12">Articles Report</div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-xl-12 col-md-12 text-primary">
+                            <h6 class="text-uppercase font-size-11">Article Count:</h6>
+                        </div>
+                    </div>
+                    <canvas id="chart_demo_4"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+﻿@model TNAUPMS.trnprojecttaskEdit
+@{
+    <div class="modal-content">
+        <form method="post" asp-page-handler="Edit">
+            <div class="modal-body">
+                <table id="crcbooking" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Code</td>
+                            <td>
+                                <input type="hidden" asp-for="@Model.id" id="id" name="id">
+                                <input type="text" data-val="true" asp-for="@Model.taskCode" data-val-required="The Code field is required." class="form-control" id="taskCode" name="taskCode">
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>Task Name</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.taskName" data-val-required="The Task Name is required." class="form-control" id="taskName" name="taskName">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Task Information</td>
+                                <td>
+                                    <textarea style="width:100%" asp-for="@Model.taskInformation"> </textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Start Date</td>
+                                <td>
+                                    <input type="date" data-val="true" asp-for="@Model.startDate" data-val-required="The Start Date is required." class="form-control" id="startDate" name="startDate">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>End Date</td>
+                                <td>
+                                    <input type="date" data-val="true" asp-for="@Model.endDate" data-val-required="The End Date is required." class="form-control" id="endDate" name="endDate">
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>Assigned To</td>
+                                <td>
+                                    <select class="form-control" style="width:100%" name="assignedTo" asp-for="@Model.assignedTo" asp-items="Model.OfficerList"></select>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="btn btn-sm btn-success">Submit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </form>
+    </div>
+}

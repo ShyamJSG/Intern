@@ -1,0 +1,200 @@
+﻿@page
+@model TNAUPMS.Pages.InvestigatorMaster
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+
+@{
+    Layout = "../Shared/_Layoutadmin.cshtml";
+}
+<div class="header-body">
+    <div class="header-body-left">
+        <h3 class="page-title">Investigator Master</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div style="margin:5px;">
+                    <button class="btn btn-sm btn-primary booking" data-toggle="modal" data-target="#division-modal">New Investigator</button>
+                </div>
+                <span>@Model.displaymsg</span>
+                <br>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">SNo</th>
+                                <th scope="col">Investigator Name</th>
+                                <th scope="col">Designation</th>
+                                <th scope="col">Department</th>
+                                <th scope="col">Institute</th>
+                                <th scope="col">MobileNo</th>
+                                <th scope="col">Option</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null)
+                            {
+                                foreach (var item in Model.invModel)
+                                {
+                                    <tr>
+                                        <td style="text-align: center;">@Html.DisplayFor(modelItem => item.id)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.investigatorName)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.designation)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.deptName)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.InstName)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.mobileNo)</td>
+                                         <td style="text-align: center;"><button class="btn btn-sm btn-success details" data-id="@item.id" data-bs-toggle="modal" data-bs-target="#details-modal"><i class="fa fa-edit"></i></button> 
+                                            <form method="post" asp-page="Index" asp-route-id="@item.id" asp-page-handler="Delete" onsubmit="return jQueryModalDelete(this)" class="d-inline">
+                                                <button type="submit" class="btn btn-sm btn-danger text-white del"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="details-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Institute Master</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="detail-modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+<form method="post" asp-page-handler="Create">
+    <div class="modal fade" tabindex="-1" role="dialog" id="division-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Investigator Master</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table id="investigator" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td>InvestigatorName</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.InvestigatorName" data-val-required="The Investigator Name is required." class="form-control" id="InvestigatorName" name="InvestigatorName">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Qualification</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.Qualification" data-val-required="The Educational Qualification is required." class="form-control" id="Qualification" name="Qualification">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Designation</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.Designation" data-val-required="Job Role is required." class="form-control" id="Designation" name="Designation">
+                                </td>
+                            </tr>
+                           <tr>
+                                <td>Institute</td>
+                                <td>
+                                    <select style="width:100%;" name="InstituteId" asp-for="@Model.InstituteId" asp-items="@Model.InstList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Department/Unit</td>
+                                <td>
+                                    <select style="width:100%;" name="DepartmentId" asp-for="@Model.DepartmentId" asp-items="@Model.UnitList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>EmailId</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.EmailId" data-val-required="The Email Id is required." class="form-control" id="EmailId" name="EmailId">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Moblie No</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.MobileNo" data-val-required="The Mobile No is required." class="form-control" id="MobileNo" name="MobileNo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button class="btn btn-sm btn-success">Submit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<script src="~/assets/js/jquery.min.js"></script>
+<script src="~/assets/js/jquery.validate.js"></script>
+<script src="~/assets/js/jquery.validate.unobtrusive.js"></script>
+
+<script>
+    $(function () {
+        $('button.details').on('click', function () {
+             var id = $(this).attr('data-id');
+             $.ajax({
+            type: 'POST',
+            url: 'investigator?handler=EditInfo',
+            data: {
+                id: id,
+            },
+            headers: {
+                RequestVerificationToken:
+                    $('input:hidden[name="__RequestVerificationToken"]').val()
+            },
+            success: function (result) {
+                $('.detail-modal-body').html(result);
+                $('#details-modal').modal('show');
+            }
+        });
+
+
+        });
+
+        $('button.del').on('click', function () {
+             var id = $(this).attr('data-id');
+             $.ajax({
+            type: 'POST',
+            url: 'investigator?handler=Delete',
+            data: {
+                id: id,
+            },
+            headers: {
+                RequestVerificationToken:
+                    $('input:hidden[name="__RequestVerificationToken"]').val()
+            },
+            success: function (result) {
+               alert('Record deleted');
+            }
+        });
+
+
+        });
+    })
+</script>
+
+

@@ -1,0 +1,56 @@
+﻿@model TNAUPMS.masinvestigatorEdit
+@{
+    <div class="modal-content">
+        <form method="post" asp-page-handler="Edit">
+
+            <div class="modal-body">
+                <table id="crcbooking" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                    <tbody>
+                         <tr>
+                                <td>InvestigatorName</td>
+                                <td>
+                                    <input type="hidden" asp-for="@Model.id" id="id" name="id">
+                                    <input type="text" data-val="true" asp-for="@Model.investigatorName" data-val-required="The Investigator Name is required." class="form-control" id="investigatorName" name="investigatorName">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Qualification</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.qualification" data-val-required="The Educational Qualification is required." class="form-control" id="qualification" name="qualification">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Designation</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.designation" data-val-required="Job Role is required." class="form-control" id="designation" name="designation">
+                                </td>
+                            </tr>
+                           <tr>
+                                <td>Institute</td>
+                                <td>
+                                    <select style="width:100%;" name="instituteId" asp-for="@Model.instituteId" asp-items="@Model.InstList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Department/Unit</td>
+                                <td>
+                                    <select style="width:100%;" name="departmentId" asp-for="@Model.departmentId" asp-items="@Model.UnitList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Moblie No</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.mobileNo" data-val-required="The Mobile No is required." class="form-control" id="mobileNo" name="mobileNo">
+                                </td>
+                            </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="btn btn-sm btn-success">Submit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </form>
+    </div>
+}

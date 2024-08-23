@@ -1,0 +1,341 @@
+﻿@page
+@model TNAUPMS.Pages.ProjectReport.IndexModel
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+
+@{
+    @if (Model.userRole =="Director")
+    {
+        Layout = "../Shared/_Layoutdirector.cshtml"; 
+    }
+    else if (Model.userRole =="Admin")
+    {
+         Layout = "../Shared/_Layoutadmin.cshtml"; 
+    }
+}
+<div class="header-body">
+    <div class="header-body-left">
+         <table style="width:100%">
+            <tr>
+                <td style="width:10%"><form method="post" asp-page-handler="Back"><button class="btn btn-sm btn-primary">Back</button></form></td>
+                <td style="width:80%; text-align:center;"><h3 class="page-title">Project Task and Reporting Details</h3></td>
+                <td style="width:10%"><form method="post" ><button class="btn btn-sm btn-success">Print</button></form></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <table style="border:none; width:100%">
+                    <tr style="border:none; width:100%">
+                        <td style="width:15%"><label>Project Code :</label></td>
+                        <td style="width:25%"><b><label style="color:green;">@Model.projectModel.projectCode</label></b></td>
+                        <td style="width:15%"><label>Project Name :</label></td>
+                        <td style="width:45%"><b><label style="color:green;">@Model.projectModel.projectName</label></b></td>
+                    </tr>
+
+                    <tr style="border:none; width:100%">
+                        <td style="width:15%"><label>Investigator:</label></td>
+                        <td style="width:25%"><b><label style="color:green;">@Model.projectModel.investigatorName</label></b></td>
+                        <td style="width:15%"><label>Instituion Name :</label></td>
+                        <td style="width:45%"><b><label style="color:green;">@Model.projectModel.instName</label></b></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+
+        @if (Model != null)
+        {
+            var i = 0;
+            foreach (var item in Model.taskModel)
+            {
+                { i++; }
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div>
+                            <figure class="avatar avatar-sm m-r-15 bring-forward">
+                                @if (item.activeStatus == "Process")
+                                {
+                                    <span class="avatar-title bg-primary rounded-circle">@(i.ToString())</span>
+                                }
+                                else if (item.activeStatus == "New")
+                                {
+                                    <span class="avatar-title bg-secondary rounded-circle">@(i.ToString())</span>
+                                }
+                                else if (item.activeStatus == "Extended")
+                                {
+                                    <span class="avatar-title bg-danger rounded-circle">@(i.ToString())</span>
+                                }
+                                else
+                                {
+                                    <span class="avatar-title bg-warning rounded-circle">@(i.ToString())</span>
+                                }
+                            </figure>
+                        </div>
+                        <div>
+                            <h4 style="color:blue;">Task : @Html.DisplayFor(modelItem => item.taskName)</h4>
+                            <table style="width:100%">
+
+                                <tr>
+                                    <td colspan=2 style="color:green;"><b>Status : @Html.DisplayFor(modelItem => item.activeStatus)</b></td>
+                                    <td colspan=2 style="color:green;">
+                                        @if (item.completedOn.HasValue && item.completedOn.Value.Year > 1990)
+                                        {
+                                            <b>Completed Date : @Html.DisplayFor(modelItem => item.completedOn)</b>
+
+                                           
+                                        }
+                                        else
+                                        {
+                                            @if (Model.userRole == "Investigator")
+                                            {
+                                                @if (item.activeStatus == "Process" || item.activeStatus == "Extended")
+                                                {
+                                                    <button class="btn btn-sm btn-primary details" data-id="@item.id" data-toggle="modal" data-target="#detail-modal">Report Submit</button>
+                                                    <button class="btn btn-sm btn-danger extention" data-id="@item.id" data-toggle="modal" data-target="#timeext-modal">Time Extention</button>
+                                                    <button class="btn btn-sm btn-warning finalreport" data-id="@item.id" data-toggle="modal" data-target="#taskreport-modal">Final Report</button>
+                                                }
+                                                else if (item.activeStatus == "New")
+                                                {
+                                                    <button class="btn btn-sm btn-primary details" data-id="@item.id" data-toggle="modal" data-target="#detail-modal">Report Submit</button>
+                                                }
+                                                else
+                                                {
+                                                    <button class="btn btn-sm btn-primary details" data-id="@item.id" data-toggle="modal" data-target="#detail-modal">Report Submit</button>
+                                                }
+                                            }
+                                        }
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan=2><i class="fa fa-clock-o m-r-5"></i>Starting Date : @Html.DisplayFor(modelItem => item.startDate)</td>
+                                    <td colspan=2><i class="fa fa-clock-o m-r-5"></i>End Date : @Html.DisplayFor(modelItem => item.endDate)</td>
+                                </tr>
+                                <tr>
+                                    <td colspan=4 style="color:blue;"><p class="m-b-5">@Html.DisplayFor(modelItem => item.taskInformation)</p></td>
+                                </tr>
+
+                            </table>
+                            <table style="width:100%">
+                                <tr>
+                                    <td style="width:25%"></td>
+                                    <td style="width:25%"></td>
+                                    <td style="width:25%"></td>
+                                    <td style="width:25%"></td>
+                                </tr>
+                                @if (Model.rptModel != null)
+                                {
+                                    foreach (var rptitem in Model.rptModel)
+                                    {
+                                        @if (item.id == rptitem.taskId)
+                                        {
+                                            <tr>
+                                                <td><i class="fa fa-clock-o m-r-5"></i><label>@Html.DisplayFor(modelItem => rptitem.reportedDate)</label></td>
+                                                <td colspan=3>
+                                                    @Html.DisplayFor(modelItem => rptitem.reportDetails)
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                 <td colspan=4 style="background-color:lightgray"></td>
+                                            </tr>
+                                        }
+                                    }
+                                }
+                            </table>
+
+                            <table style="width:100%">
+                                <tr>
+                                    <td style="width:25%"></td>
+                                    <td style="width:25%"></td>
+                                    <td style="width:25%"></td>
+                                    <td style="width:25%"></td>
+                                </tr>
+                                @if (Model.extModel != null)
+                                {
+                                    foreach (var extitem in Model.extModel)
+                                    {
+                                        @if (item.id == extitem.taskId)
+                                        {
+                                            <tr>
+                                                <td style="color:red;"><i class="fa fa-clock-o m-r-5"></i><label>@Html.DisplayFor(modelItem => extitem.requestDate)</label></td>
+                                                <td colspan=3 style="color:red;">@Html.DisplayFor(modelItem => extitem.reason)</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color:red;"><label>Extented Date :</label></td>
+                                                <td colspan=3 style="color:red;">@Html.DisplayFor(modelItem => extitem.extensionDate)</td>
+                                            </tr>
+
+                                        }
+                                    }
+                                }
+                            </table>
+
+                            @if (item.activeStatus == "Completed")
+                            {
+                                <table style="width:100%">
+                                    <tr>
+                                        <td style="width:25%"></td>
+                                        <td style="width:25%"></td>
+                                        <td style="width:25%"></td>
+                                        <td style="width:25%"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan=4 style="background-color:#1c471c; color:#fff;">Task completed summary</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan=4 style="color:green;"><i class="fa fa-clock-o m-r-5"></i><b>Completed Date : @Html.DisplayFor(modelItem => item.completedOn)</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan=1>Summary :</td>
+                                        <td colspan=3> @Html.DisplayFor(modelItem => item.reportDetails) </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan=1>Reviewer Note :</td>
+                                        <td colspan=3> @Html.DisplayFor(modelItem => item.reviewerNotes) </td>
+                                    </tr>
+                                </table>
+                                <br />
+
+                            }
+                            <table style="width:100%">
+                                <tr>
+                                    <td colspan=4 style="background-color:#1c471c"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+            }
+        }
+    </div>
+</div>
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="detail-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Task Reporting</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="detail-modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="timeext-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Date Extenstion Request</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="timeext-modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="taskreport-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Task Completion Report</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="taskreport-modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery.validate.js"></script>
+<script src="../assets/js/jquery.validate.unobtrusive.js"></script>
+
+<script>
+    $(function () {
+        $('button.details').on('click', function () {
+             var id = $(this).attr('data-id');
+           
+             $.ajax({
+            type: 'POST',
+            url: 'projectreport?handler=EditInfo',
+            data: {
+                id: id,
+            },
+            headers: {
+                RequestVerificationToken:
+                    $('input:hidden[name="__RequestVerificationToken"]').val()
+            },
+            success: function (result) {
+                $('.detail-modal-body').html(result);
+                $('#detail-modal').modal('show');
+            }
+        });
+       
+        });
+
+
+         $('button.extention').on('click', function () {
+             var id = $(this).attr('data-id');
+            
+          $.ajax({
+            type: 'POST',
+            url: 'projectreport?handler=ExtentionInfo',
+            data: {
+                id: id,
+            },
+            headers: {
+                RequestVerificationToken:
+                    $('input:hidden[name="__RequestVerificationToken"]').val()
+            },
+            success: function (result) {
+                $('.timeext-modal-body').html(result);
+                $('#timeext-modal').modal('show');
+            }
+        });
+        });
+
+         $('button.finalreport').on('click', function () {
+             var id = $(this).attr('data-id');
+            
+          $.ajax({
+            type: 'POST',
+            url: 'projectreport?handler=FinalReport',
+            data: {
+                id: id,
+            },
+            headers: {
+                RequestVerificationToken:
+                    $('input:hidden[name="__RequestVerificationToken"]').val()
+            },
+            success: function (result) {
+                $('.taskreport-modal-body').html(result);
+                $('#taskreport-modal').modal('show');
+            }
+        });
+        });
+    })
+</script>

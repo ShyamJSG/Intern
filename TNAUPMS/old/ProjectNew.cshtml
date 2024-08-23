@@ -1,0 +1,153 @@
+﻿@page
+@model TNAUPMS.Pages.ProjectNew
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+
+@{ Layout = "Shared/_Layoutadmin.cshtml"; }
+<div class="header-body">
+    <div class="header-body-left">
+        <h3 class="page-title">New Project Creation</h3>
+    </div>
+</div>
+
+<form>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                 <div class="form-group">
+                      <label for="projectCode">Project Code</label>
+                      <input type="text" class="form-control" id="projectCode" placeholder="Enter Project Code">
+                 </div>
+                 <div class="form-group">
+                      <label for="projectName">Project Name</label>
+                      <input type="text" class="form-control" id="projectName" placeholder="Enter Project Name">
+                  </div>
+                  <div class="form-group">
+                      <label for="projectCode">Scientist Name </label>
+                     <select class="form-control" id="exampleFormControlSelect1">
+                                <option>-- Select --</option>
+                                <option>Dr.K.Manikandan</option>
+                                <option>Dr.M.Selvaraj</option>
+                                <option>Dr.T.Praveenkumar</option>
+                                <option>Dr.S.Annamalai</option>
+                      </select>
+                 </div>
+                  <div class="form-group">
+                      <label for="projectName">Scientist Position</label>
+                      <input type="text" class="form-control" placeholder="Scientist Position">
+                  </div>
+                   <div class="form-group">
+                     <label>Project Type</label>
+                     <select class="form-control" id="exampleFormControlSelect1">
+                                <option>-- Select --</option>
+                                <option>External Funding scheme</option>
+                                <option>External Funding scheme</option>
+                                <option>University Research project</option>
+                      </select>
+                  </div>
+                    <div class="form-group">
+                      <label for="projectName">Methodology </label>
+                      <input type="text" class="form-control" placeholder="Methodology">
+                  </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                      <label for="projectCode">Institute Name </label>
+                     <select class="form-control" id="exampleFormControlSelect1">
+                                <option>-- Select --</option>
+                                <option>Tamil Nadu Rice Research Institute - Aduthurai</option>
+                                <option>Agricultural College and Research Institute, Coimbatore</option>
+                                <option>Agricultural College and Research Institute, Madurai</option>
+                                <option>Agricultural College and Research Institute, Killikulam</option>
+                                <option>Horticulture College and Research Institute, Periyakulam, Theni</option>
+                      </select>
+                 </div>
+                  <div class="form-group">
+                      <label for="directorate">Directorate</label>
+                     <select class="form-control" id="">
+                                <option>-- Select --</option>
+                                <option>Directorate of Crop Management</option>
+                                <option>Directorate of Seed centre</option>
+                                <option>Centre for Agricultural and Rural Development Studies</option>
+                                <option>Directorate of Agribusiness Development </option>
+                                <option>Directorate of Extension Education</option>
+                      </select>
+                 </div>
+                 <div class="form-group">
+                      <label for="directorate">Science</label>
+                     <select class="form-control" id="">
+                                <option>-- Select --</option>
+                                <option>Soil Science</option>
+                                <option>Micro Biology</option>
+                                <option>Crop Science</option>
+                                <option>Water Science</option>
+                      </select>
+                 </div>
+
+                 <div class="form-group">
+                      <label for="directorate">Crop Science Meet</label>
+                     <select class="form-control" id="">
+                                <option>-- Select --</option>
+                                <option>Rice scientists meet</option>
+                                <option>Sugarcane scientists meet</option>
+                                <option>Pulses scientists meet</option>
+                                <option>Horticultural crops scientists meet</option>
+                                <option>Agricultural Engineering scientists meet</option>
+                      </select>
+                 </div>
+                    <div class="form-group">
+                      <label for="directorate">Funding Agency</label>
+                     <select class="form-control" id="">
+                                <option>-- Select --</option>
+                                <option>TNAU</option>
+                                <option>State Govt Schemes</option>
+                                <option>Union Govt Schemes</option>
+                                <option>Others</option>
+                      </select>
+                 </div>
+                   <div class="form-group">
+                      <label for="projectName">Budget</label>
+                      <input type="text" class="form-control" placeholder="">
+                  </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+       <div class="form-group">
+          <label for="projectName">Project Objectives</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+       </div>
+    </div>
+     <div class="col-md-12">
+       <div class="form-group">
+          <label for="projectName">Methodology</label>
+           <td><input type="file" class="form-control-file" id="exampleFormControlFile1"></td>
+       </div>
+    </div>
+     <div class="col-md-12">
+       <div class="form-group">
+          <label for="projectName">Outputs expected</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+       </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+       <div class="form-group">
+          <button class="btn btn-sm btn-success">Submit</button>
+       </div>
+    </div>
+</div>
+
+</form>
+

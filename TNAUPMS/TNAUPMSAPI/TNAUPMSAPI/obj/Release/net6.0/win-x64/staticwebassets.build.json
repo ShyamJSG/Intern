@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yLVukBUeWS4TEZeOqd736ZvIwPD3k26El+h+xB4yybc=",
+  "Source": "TNAUPMS.WebApi",
+  "BasePath": "_content/TNAUPMS.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

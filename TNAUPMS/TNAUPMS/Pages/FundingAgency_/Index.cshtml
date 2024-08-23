@@ -1,0 +1,80 @@
+﻿@page
+@using TNAUPMS.Pages
+@{
+    ViewData["Title"] = "Funding page";
+}
+
+<div class="text-left">
+    <h5 class="display-5">Funding Agency Master</h5>
+</div>
+<div class="card">
+    <div class="col-sm-12" style="padding:20px">
+        <a onclick="jQueryModalGet('?handler=CreateOrEdit','Create masfundingagency')" class="btn bg-success">
+            Create
+        </a>
+        <a id="reload" class="btn bg-warning">
+            Reload
+        </a>
+    </div>
+<table class="table table-bordered" id="customerTable">
+    <thead>
+        <tr>
+            <th>
+                SNo
+            </th>
+            <th>
+                Funding Agency Name
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.masfundingagencyList.Count() != 0)
+        {
+            @foreach (var fam in Model.masfundingagencyList)
+            {
+        <tr>
+            <td>
+                @fam.id
+            </td>
+            <td>
+                @fam.fundingAgency
+            </td>
+            <td text-right">
+                <button class="btn btn-sm btn-success details" data-id="@fam.id" data-bs-toggle="modal" data-bs-target="#details-modal">Address Info</button> 
+
+                <form method="post" asp-page="Index" asp-route-id="@fam.id" asp-page-handler="Delete" onsubmit="return jQueryModalDelete(this)" class="d-inline">
+                    <button type="submit" class="btn btn-danger text-white"> Delete</button>
+                </form>
+            </td>
+        </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="details-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Creation</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="detail-modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+@section Scripts
+{
+  
+}

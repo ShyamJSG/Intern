@@ -1,0 +1,300 @@
+﻿
+@page
+@model TNAUPMS.Pages.ProjectListDir
+@using Microsoft.AspNetCore.Antiforgery
+@addTagHelper *, Microsoft.AspNetCore.Mvc
+@inject IAntiforgery antiforgery
+
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+
+@{ Layout = "Shared/_Layoutdirector.cshtml"; }
+<div class="header-body">
+    <div class="header-body-left">
+        <h3 class="page-title">Project List</h3>
+    </div>
+</div>
+
+<div class="card">
+        <div class="card-body">
+            <ul class="nav nav-pills mb-3" id="pills-tab2" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-direcorate"
+                       role="tab" aria-controls="pills-home" aria-selected="true">Directorate Wise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-institution"
+                       role="tab" aria-controls="pills-profile" aria-selected="false">Institution Wise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-science"
+                       role="tab" aria-controls="pills-contact" aria-selected="false">Science Wise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-fund"
+                       role="tab" aria-controls="pills-contact" aria-selected="false">Funding Agency Wise</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent2">
+                <div class="tab-pane fade show active" id="pills-direcorate" role="tabpanel"aria-labelledby="pills-home-tab">
+                     <div class="table-responsive">
+                        <table class="table">
+                            <thead style="background-color: #1c471c; color: #fff;">
+                                <tr>
+                                    <th scope="col">SNo</th>
+                                    <th scope="col">Directorate</th>
+                                    <th scope="col">Institution</th>
+                                    <th scope="col">No Of Project</th>
+                                    <th scope="col">Total Fund</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Directorate of Crop Management</td>
+                                    <td>Tamil Nadu Rice Research Institute - Aduthurai</td>
+                                    <td>7</td>
+                                    <td>23,00,000</td>
+                                    <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Directorate of Crop Management </td>
+                                    <td>Agricultural College and Research Institute, Coimbatore</td>
+                                    <td>5</td>
+                                    <td>54,23,000</td>
+                                    <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Directorate of Crop Management</td>
+                                    <td>Agricultural College and Research Institute, Madurai</td>
+                                    <td>12</td>
+                                    <td>46,00,000</td>
+                                    <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Directorate of Crop Management</td>
+                                    <td>Agricultural College and Research Institute, Killikulam</td>
+                                    <td>4</td>
+                                    <td>14,00,000</td>
+                                    <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-institution" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="table-responsive">
+                    <table class="table">
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">SNo</th>
+                                <th scope="col">Institution</th>
+                                <th scope="col">No Of Project</th>
+                                <th scope="col">Total Fund</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Tamil Nadu Rice Research Institute - Aduthurai</td>
+                                <td>7</td>
+                                <td>23,00,000</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Agricultural College and Research Institute, Coimbatore</td>
+                                <td>5</td>
+                                <td>54,23,000</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Agricultural College and Research Institute, Madurai</td>
+                                <td>12</td>
+                                <td>46,00,000</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Agricultural College and Research Institute, Killikulam</td>
+                                <td>4</td>
+                                <td>14,00,000</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                 </div>
+                </div>
+                <div class="tab-pane fade" id="pills-science" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                        <div class="table-responsive">
+                    <table class="table">
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">SNo</th>
+                                <th scope="col">Science</th>
+                                <th scope="col">No Of Project</th>
+                                <th scope="col">Total Fund</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Soil Science</td>
+                                <td>7</td>
+                                <td>23,00,000</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Micro Biology</td>
+                                <td>5</td>
+                                <td>54,23,000</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Crop Science</td>
+                                <td>12</td>
+                                <td>46,00,000</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Water Science</td>
+                                <td>4</td>
+                                <td>14,00,000</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                 </div>
+                </div>
+                <div class="tab-pane fade" id="pills-fund" role="tabpanel" aria-labelledby="pills-contact-tab">
+                  <div class="table-responsive">
+                     <table class="table">
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">SNo</th>
+                                <th scope="col">Find Agency</th>
+                                <th scope="col">No Of Project</th>
+                                <th scope="col">Total Fund</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>TNAU</td>
+                                <td>8</td>
+                                <td>23,00,000</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>State Govt Schemes</td>
+                                <td>15</td>
+                                <td>54,23,000</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Union Govt Schemes</td>
+                                <td>5</td>
+                                <td>46,00,000</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Pvt Funder</td>
+                                <td>3</td>
+                                <td>14,00,000</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-success booking" data-id="" data-toggle="modal" data-target="#projectlist-modal">Detail Report</button> </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                 </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+ <form method="post" asp-page="ProjectListDir">
+ <div class="modal fade" tabindex="-1" role="dialog" id="projectlist-modal">
+        <div class="modal-dialog" style="width:1000px;left:-150px;">
+            <div class="modal-content"style="width:1000px;">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project List</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                       <div class="table-responsive">
+                    <table class="table">
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">SNo</th>
+                                <th scope="col">Project Name</th>
+                                <th scope="col">Investigator</th>
+                                <th scope="col">Institute Name</th>
+                                <th scope="col">Funding Agency</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Salt affected soils in Thoothugudi</td>
+                                <td>Dr.K.Manikandan</td>
+                                <td>TNAU-Killikulam</td>
+                                <td>TNAU</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-primary">View Report</button> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Development of an Automatic Nursery Tray Seeder for SRI</td>
+                                <td>Dr.Selvaraj</td>
+                                <td>TNAU - CBE</td>
+                                <td>State Govt</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-primary">View Report</button> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Power Weeder for Weeding on Ridges and Furrows</td>
+                                <td>Dr.Chellaiah</td>
+                                <td>TNAU-MDU</td>
+                                <td>Union Govt</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-primary">View Report</button> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Controlled Atmosphere Storage for selected pulses</td>
+                                <td>Dr.Rajkumar</td>
+                                <td>TNAU - CBE</td>
+                                <td>State Govt</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-primary">View Report</button> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

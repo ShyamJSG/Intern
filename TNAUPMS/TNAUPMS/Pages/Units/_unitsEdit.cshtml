@@ -1,0 +1,38 @@
+﻿@model TNAUPMS.masunitedit
+@{
+    <div class="modal-content">
+        <form method="post" asp-page-handler="Edit">
+
+            <div class="modal-body">
+                <table id="crcbooking" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Code</td>
+                            <td>
+                                <input type="hidden" asp-for="@Model.id" id="id" name="id">
+                                <input type="text" data-val="true" asp-for="@Model.code" data-val-required="The Code field is required." class="form-control" id="code" name="code">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td>
+                                <input type="text" data-val="true" asp-for="@Model.unitName" data-val-required="The Department/unit field is required." class="form-control" id="unitName" name="unitName">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Institute Name</td>
+                            <td>
+                                <select name="instituteId" asp-for="@Model.instituteId" asp-items="@Model.InstList"></select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="btn btn-sm btn-success">Submit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </form>
+    </div>
+}

@@ -1,0 +1,68 @@
+﻿
+@model IEnumerable<Library.Models.Issue>
+@{
+    ViewData["Title"] = "Books";
+    Layout = "MainLayout";
+}
+<h1>Issue Section:</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.IssueID)</th>
+            <th>@Html.DisplayNameFor(model => model.Ititle)</th>
+            <th>@Html.DisplayNameFor(model => model.Iauthor)</th>
+            <th>@Html.DisplayNameFor(model => model.IssuePeriod)</th>
+            <th>@Html.DisplayNameFor(model => model.Due)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+     <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.IssueID)</td>
+                <td>@Html.DisplayFor(modelItem => item.Ititle)</td>
+                <td>@Html.DisplayFor(modelItem => item.Iauthor)</td>
+                <td>@Html.DisplayFor(modelItem => item.IssuePeriod)</td>
+                <td>@Html.DisplayFor(modelItem => item.Due)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IssueID">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IssueID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<h2>Add New Issue:</h2>
+<form asp-action="Create">
+    <div class="form-group">
+        <label for="IssueID">Issue ID:</label>
+        <input type="text" id="IssueID" name="IssueID" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Ititle">Title:</label>
+        <input type="text" id="Ititle" name="Ititle" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Iauthor">Author:</label>
+        <input type="text" id="Iauthor" name="Iauthor" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="IssuePeriod">Issue Period:</label>
+        <select id="IssuePeriod" name="IssuePeriod" class="form-control" required>
+            <option value="">Select Period</option>
+            <option value="1 Week">1 Week</option>
+            <option value="2 Weeks">2 Weeks</option>
+            <option value="1 Month">1 Month</option>
+            <option value="3 Months">3 Months</option>
+        </select>
+    </div><br>
+    <div class="form-group">
+        <label for="Due">Due:</label>
+        <input type="checkbox" id="Due" name="Due" />
+    </div><br>
+    <div class="form-group">
+        <input type="submit" value="Add Issue" class="btn btn-primary" />
+    </div>
+</form>

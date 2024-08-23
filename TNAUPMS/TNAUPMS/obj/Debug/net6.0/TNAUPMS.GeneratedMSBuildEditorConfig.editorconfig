@@ -1,0 +1,179 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TNAUPMS
+build_property.RootNamespace = TNAUPMS
+build_property.ProjectDir = D:\Intern\TNAUPMS\TNAUPMS\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Intern\TNAUPMS\TNAUPMS
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/department/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/department/_deptEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGVwYXJ0bWVudFxfZGVwdEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/fundingAgency/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZnVuZGluZ0FnZW5jeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/fundingAgency/_fundingagencyEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZnVuZGluZ0FnZW5jeVxfZnVuZGluZ2FnZW5jeUVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/HomeAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZUFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/HomeDirector.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZURpcmVjdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/HomeInvestigator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZUludmVzdGlnYXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/HomeUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/institute/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaW5zdGl0dXRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/institute/_instituteEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaW5zdGl0dXRlXF9pbnN0aXR1dGVFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/Investigator/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZXN0aWdhdG9yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/Investigator/_investigatorEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZXN0aWdhdG9yXF9pbnZlc3RpZ2F0b3JFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/ProjectAdd/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdEFkZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/ProjectReport/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdFJlcG9ydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/ProjectReport/_extendedModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdFJlcG9ydFxfZXh0ZW5kZWRNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/ProjectReport/_finalreportModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdFJlcG9ydFxfZmluYWxyZXBvcnRNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/ProjectReport/_reportingModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdFJlcG9ydFxfcmVwb3J0aW5nTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/projectsubtype/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvamVjdHN1YnR5cGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/projectsubtype/_projectsubtype.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvamVjdHN1YnR5cGVcX3Byb2plY3RzdWJ0eXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/Projects/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/ProjectTask/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdFRhc2tcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/ProjectTask/_projecttaskEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdFRhc2tcX3Byb2plY3R0YXNrRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/ProjectType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdFR5cGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/ProjectType/_projecttypeEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdFR5cGVcX3Byb2plY3R0eXBlRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/ProjectUpdate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdFVwZGF0ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/sciencemeet/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2NpZW5jZW1lZXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/sciencemeet/_sciencemeetEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2NpZW5jZW1lZXRcX3NjaWVuY2VtZWV0RWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/science/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2NpZW5jZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/science/_scienceEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2NpZW5jZVxfc2NpZW5jZUVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/Shared/_Layoutadmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXRhZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/Shared/_Layoutdirector.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXRkaXJlY3Rvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/Shared/_Layoutuser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXR1c2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/SoilTest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29pbFRlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/Units/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5pdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/Units/_unitsEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5pdHNcX3VuaXRzRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/TNAUPMS/TNAUPMS/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

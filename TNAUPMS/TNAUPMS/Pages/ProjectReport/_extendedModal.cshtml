@@ -1,0 +1,34 @@
+﻿@model TNAUPMS.extentionModel
+@{
+    <div class="modal-content">
+        <form method="post" asp-page-handler="ExtentionSave">
+
+            <div class="modal-body">
+             <table id="reporting" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Task Name</td>
+                            <td>
+                                <input type="hidden" asp-for="@Model.id" id="id" name="id">
+                                <input type="text" readonly class="form-control-plaintext" asp-for="@Model.taskName" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date : </td>
+                            <td><input type="date" data-val="true" asp-for="@Model.extendedDate" data-val-required="The reportedDate field is required." class="form-control" id="extendedDate" name="extendedDate"></td>
+                        </tr>
+                        <tr>
+                            <td>Reason:</td>
+                            <td><textarea class="form-control" asp-for="@Model.reason" id="reason" rows="3"></textarea></td>
+                        </tr>
+                       
+                        <tr>
+                            <td></td>
+                            <td><button class="btn btn-sm btn-success">Submit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+}

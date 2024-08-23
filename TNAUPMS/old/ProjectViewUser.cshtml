@@ -1,0 +1,62 @@
+﻿@page
+@model TNAUPMS.Pages.ProjectViewUser
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+
+@{ Layout = "Shared/_Layoutuser.cshtml"; }
+<div class="header-body">
+    <div class="header-body-left">
+        <h3 class="page-title">Project List</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">SNo</th>
+                                <th scope="col">Project Name</th>
+                                <th scope="col">Investigator</th>
+                                <th scope="col">Institute Name</th>
+                                <th scope="col">Funding Agency</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Grami Krishi Mosham Seva</td>
+                                <td>Dr.K.Manikandan</td>
+                                <td>TNAU-Killikulam</td>
+                                <td>TNAU</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-primary">Reporting</button> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>FASAL </td>
+                                <td>Dr.K.Manikandan</td>
+                                <td>TNAU - CBE</td>
+                                <td>State Govt</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-primary">Reporting</button> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Permanent Manuria Experiment on Rice based cropping system</td>
+                                <td>Dr.K.Manikandan</td>
+                                <td>TNAU-MDU</td>
+                                <td>Union Govt</td>
+                                <td style="text-align: center;"><button class="btn btn-sm btn-primary">Reporting</button> </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

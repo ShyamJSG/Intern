@@ -1,0 +1,105 @@
+﻿@page
+@model TNAUPMS.Pages.ProjectTaskUser
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+
+@{ Layout = "Shared/_Layoutuser.cshtml"; }
+<div class="header-body">
+    <div class="header-body-left">
+        <h3 class="page-title">Project Task</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+         <div class="form-group">
+             <label for="projectCode">Project Name </label>
+             <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Grami Krishi Mosham Seva</option>
+                    <option>FASAL </option>
+                    <option>Permanent Manuria Experiment on Rice based cropping system</option>
+              </select>
+         </div>
+         <div style="margin:15px;">
+              <button class="btn btn-sm btn-primary booking" data-toggle="modal" data-target="#task-modal">Report Submit</button>
+              <br />
+         </div>
+    </div>
+    <div class="col-md-6">
+       <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Scientist:</label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail"value="Dr.K.Manikandan">
+            </div>
+        </div>
+       <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Directorate:</label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail"value="Directorate of Crop Management">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+             <div class="table-responsive">
+                    <table class="table">
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">SNo</th>
+                                <th scope="col">Task Name</th>
+                                <th scope="col">Start Date</th>
+                                <th scope="col">End Date</th>
+                                <th scope="col">Completed On</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Soil sample collection and analysis</td>
+                                <td>01-Apr-2022</td>
+                                <td>30-May-2022</td>
+                                <td style="background-color:red;">15-Jun-2022</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Incubation studies</td>
+                                <td>01-Jun-2022</td>
+                                <td>30-Jul-2022</td>
+                                <td style="background-color:green;">25-Jul-2022</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Glass house studies </td>
+                                <td>01-Aug-2022</td>
+                                <td>30-Dec-2022</td>
+                                <td></td>
+                                <td>Processing</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Field experiments </td>
+                                <td>01-Jan-2023</td>
+                                <td>30-Apr-2023</td>
+                                <td></td>
+                                <td>Not yet Started</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Report preparation & submission</td>
+                                <td>01-May-2023</td>
+                                <td>30-Jun-2023</td>
+                                <td></td>
+                                <td>Not yet Started</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+    </div>
+</div>

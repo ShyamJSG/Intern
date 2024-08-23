@@ -1,0 +1,10 @@
+D:\Intern\Match Game\Match Game\obj\Debug\Match Game.csproj.AssemblyReference.cache
+D:\Intern\Match Game\Match Game\obj\Debug\Match_Game.Form1.resources
+D:\Intern\Match Game\Match Game\obj\Debug\Match_Game.Properties.Resources.resources
+D:\Intern\Match Game\Match Game\obj\Debug\Match Game.csproj.GenerateResource.cache
+D:\Intern\Match Game\Match Game\obj\Debug\Match Game.csproj.CoreCompileInputs.cache
+D:\Intern\Match Game\Match Game\bin\Debug\Match Game.exe.config
+D:\Intern\Match Game\Match Game\bin\Debug\Match Game.exe
+D:\Intern\Match Game\Match Game\bin\Debug\Match Game.pdb
+D:\Intern\Match Game\Match Game\obj\Debug\Match Game.exe
+D:\Intern\Match Game\Match Game\obj\Debug\Match Game.pdb

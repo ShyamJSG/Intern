@@ -1,0 +1,131 @@
+﻿@page
+@model TNAUPMS.Pages.ProjectUpdate.IndexModel
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+@{
+    Layout = "../Shared/_Layoutadmin.cshtml";
+}
+<div class="header-body">
+    <div class="header-body-left">
+        <table style="width:100%">
+            <tr>
+                <td style="width:10%"><form method="post" asp-page-handler="Back"><button class="btn btn-sm btn-primary">Back</button></form></td>
+                <td style="width:80%; text-align:center;"><h3 class="page-title">Project Master</h3></td>
+                <td style="width:10%"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<form method="post">
+
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+
+                    <table id="project" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td>ProjectCode</td>
+                                <td>
+                                    <input type="hidden" asp-for="@Model.ProjectId" id="id" name="id">
+                                    <input type="text" data-val="true" asp-for="@Model.ProjectCode" data-val-required="The Project Code is required." class="form-control" id="ProjectCode" name="ProjectCode">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Project Name</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.ProjectName" data-val-required="The Project Name is required." class="form-control" id="ProjectName" name="ProjectName">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Department</td>
+                                <td>
+                                    <select class="form-control" style="width:100%" name="DepartmentId" asp-for="@Model.DepartmentId" asp-items="Model.DeptList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Institute</td>
+                                <td>
+                                    <select class="form-control" style="width:100%" name="InstituteId" asp-for="@Model.InstituteId" asp-items="Model.InsList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>
+                                    <select class="form-control" style="width:100%" name="ScienceId" asp-for="@Model.ScienceId" asp-items="Model.SceList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Science Meet</td>
+                                <td>
+                                    <select class="form-control" style="width:100%" name="ScienceMeetId" asp-for="@Model.ScienceMeetId" asp-items="Model.SciList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Project Type</td>
+                                <td>
+                                    <select class="form-control" style="width:100%" name="ProjectTypeId" asp-for="@Model.ProjectTypeId" asp-items="Model.ProList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Project Sub Type</td>
+                                <td>
+                                    <select class="form-control" style="width:100%" name="ProjectSubTypeId" asp-for="@Model.ProjectSubTypeId" asp-items="Model.ProsList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Funding Agency</td>
+                                <td>
+                                    <select class="form-control" style="width:100%" name="FundingAgencyId" asp-for="@Model.FundingAgencyId" asp-items="Model.FundList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Principal Investigator</td>
+                                <td>
+                                    <select class="form-control" style="width:100%" name="InvestigatorId" asp-for="@Model.InvestigatorId" asp-items="Model.OfficerList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Budget</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.Budget" data-val-required="Budget Value is required." class="form-control" id="Budget" name="Budget">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Objective</td>
+                                <td>
+                                    <textarea style="width:100%" asp-for="@Model.Objective"> </textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Methodology</td>
+                                <td>
+                                    <textarea style="width:100%" asp-for="@Model.Methodology"> </textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Output</td>
+                                <td>
+                                    <textarea style="width:100%" asp-for="@Model.Output"> </textarea>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td><button class="btn btn-sm btn-success">Submit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+
+    </div>
+</form>

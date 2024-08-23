@@ -1,0 +1,405 @@
+﻿@page
+@model TNAUPMS.Pages.ProjectReportingDir
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+
+@{ Layout = "Shared/_Layoutdirector.cshtml"; }
+<div class="header-body">
+    <div class="header-body-left">
+        <h3 class="page-title">Project Task</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+          <div class="form-group">
+                      <label for="directorate">Directorate</label>
+                     <select class="form-control" id="">
+                                <option>-- Select --</option>
+                                <option>Directorate of Crop Management</option>
+                                <option>Directorate of Seed centre</option>
+                                <option>Centre for Agricultural and Rural Development Studies</option>
+                                <option>Directorate of Agribusiness Development </option>
+                                <option>Directorate of Extension Education</option>
+                      </select>
+         </div>
+
+         <div class="form-group">
+                      <label for="projectCode">Institute Name </label>
+                     <select class="form-control" id="exampleFormControlSelect1">
+                                <option>-- Select --</option>
+                                <option>Tamil Nadu Rice Research Institute - Aduthurai</option>
+                                <option>Agricultural College and Research Institute, Coimbatore</option>
+                                <option>Agricultural College and Research Institute, Madurai</option>
+                                <option>Agricultural College and Research Institute, Killikulam</option>
+                                <option>Horticulture College and Research Institute, Periyakulam, Theni</option>
+                      </select>
+          </div>
+
+         <div class="form-group">
+             <label for="projectCode">Project Name </label>
+             <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Grami Krishi Mosham Seva</option>
+                    <option>FASAL </option>
+                    <option>Permanent Manuria Experiment on Rice based cropping system</option>
+              </select>
+         </div>
+        
+    </div>
+    <div class="col-6">
+        <table style="width:100%">
+            <tr>
+                <td style="width:50%">Scientist:</td>
+                <td style="width:50%">Dr.K.Manikandan</td>
+            </tr>
+            <tr>
+                <td>Start Date:</td>
+                <td>01-Apr-2022</td>
+            </tr>
+            <tr>
+                <td>End Date:</td>
+                <td>30 Jun-2023</td>
+            </tr>
+            <tr>
+                <td>Budget:</td>
+                <td>Rs.4,00,000</td>
+            </tr>
+        </table>
+       <br />
+       <br />
+       <br />
+        
+        <div style="margin:15px;">
+                    <button class="btn btn-sm btn-primary booking" data-toggle="modal" data-target="#review-modal">Project Review</button>
+                    <br />
+         </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <table style="width:100%">
+            <tr>
+                <td style="background-color:#1c471c"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<br />
+<br />
+<div class="row">
+    <div class="col-12">
+   
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div>
+                        <figure class="avatar avatar-sm m-r-15 bring-forward">
+                            <span class="avatar-title bg-danger rounded-circle">1</span>
+                        </figure>
+                    </div>
+                    <div>
+                        <h4 style="color:blue;">Task :Soil sample collection and analysis</h4>
+                          <table style="width:100%">
+
+                              <tr>
+                                <td colspan=2 style="color:green;"><b>Status : Completed</b></td>
+                                <td colspan=2 style="color:green;"><b>Completed Date : 15-Jun-2022</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan=4><p class="m-b-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est iusto necessitatibus officia porro repellendus rerum. </p></td>
+                            </tr>
+                            <tr>
+                                <td colspan=2><i class="fa fa-clock-o m-r-5"></i>Starting Date : 01-Apr-22</td>
+                                <td colspan=2><i class="fa fa-clock-o m-r-5"></i>End Date : 30-May-22</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-clock-o m-r-5"></i>10-Apr-22</td>
+                                <td colspan=3> -- review content1   -- 
+                                    <a href="#" class="btn btn-light text-left align-items-center justify-content-center btn-sm m-r-10 m-b-5">
+                                            <i class="fa fa-file-o font-size-25 m-r-15"></i>
+                                        <div class="small">
+                                            <div>example.jpg</div>
+                                            <div>10 KB</div>
+                                </div>
+                            </a>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-clock-o m-r-5"></i>20-Apr-22</td>
+                                <td colspan=3> -- review content2   --
+                                      <a href="#" class="btn btn-light text-left align-items-center justify-content-center btn-sm m-b-5">
+                                            <i class="fa fa-file-pdf-o font-size-25 m-r-15"></i>
+                                        <div class="small">
+                                            <div>test.pdf</div>
+                                            <div>10 KB</div>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color:red;"><i class="fa fa-clock-o m-r-5"></i>30-May-22</td>
+                                <td colspan=3 style="color:red;">Time extended to 15-Jun-2022</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan=4 style="background-color:#1c471c; color:#fff;">Task completed summary</td>
+                            </tr>
+                            <tr>
+                                <td colspan=2 style="color:red;"><i class="fa fa-clock-o m-r-5"></i>Completed On : 10-Jun-22</td>
+                                <td colspan=2 style="color:red;"><i class="fa fa-clock-o m-r-5"></i>Online submit Date : 15-Jun-22</td>
+                            </tr>
+                            <tr>
+                                <td colspan=4> --- task summary ---- </td>
+                            </tr>
+                             <tr>
+                                <td colspan=4 style="background-color:#1c471c"></td>
+                            </tr>
+                        </table>
+
+                        
+                       
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div>
+                        <figure class="avatar avatar-sm m-r-15 bring-forward">
+                            <span class="avatar-title bg-success rounded-circle">2</span>
+                        </figure>
+                    </div>
+                    <div>
+                        <h4 style="color:blue;">Task : Incubation studies</h4>
+                        <table style="width:100%">
+                              <tr>
+                                <td colspan=2 style="color:green;"><b>Status : Completed</b></td>
+                                <td colspan=2 style="color:green;"><b>Completed Date : 25-Jul-2022</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan=4><p class="m-b-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est iusto necessitatibus officia porro repellendus rerum.</p></td>
+                            </tr>
+                            <tr>
+                                <td colspan=2><i class="fa fa-clock-o m-r-5"></i>Starting Date : 01-Jun-22</td>
+                                <td colspan=2><i class="fa fa-clock-o m-r-5"></i>End Date : 30-Jul-22</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-clock-o m-r-5"></i>15-Jun-22</td>
+                                <td colspan=3> -- review content1   -- 
+                                    <div class="small">
+                                            <div>example.txt</div>
+                                             <div>10 KB</div>
+                                        </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-clock-o m-r-5"></i>30-Jun-22</td>
+                                <td colspan=3> -- review content2   --
+                                   <a href="#" class="btn btn-light text-left align-items-center justify-content-center btn-sm m-b-5">
+                                            <i class="fa fa-file-pdf-o font-size-25 m-r-15"></i>
+                                        <div class="small">
+                                            <div>report.pdf</div>
+                                            <div>10 KB</div>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan=4 style="background-color:#1c471c; color:#fff;">Task completed summary</td>
+                            </tr>
+                            <tr>
+                                <td colspan=2><i class="fa fa-clock-o m-r-5"></i>Completed On : 25-Jul-22</td>
+                                <td colspan=2><i class="fa fa-clock-o m-r-5"></i>Online submit Date : 25-Jul-22</td>
+                            </tr>
+                            <tr>
+                                <td colspan=4> --- task summary ---- </td>
+                            </tr>
+                            <tr>
+                                <td colspan=4 style="background-color:#1c471c; color:#fff;"></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+               
+                <div class="timeline-item">
+                    <div>
+                        <figure class="avatar avatar-sm m-r-15 bring-forward">
+                            <span class="avatar-title bg-primary rounded-circle">3</span>
+                        </figure>
+                    </div>
+                    <div>
+                       <h4 style="color:blue;">Task : Glass house studies</h4>
+                       <table style="width:100%">
+                              <tr>
+                                <td colspan=2 style="color:green;"><b>Status : On Process</b></td>
+                                <td colspan=2 style="color:green;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=4><p class="m-b-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est iusto necessitatibus officia porro repellendus rerum. </p></td>
+                            </tr>
+                            <tr>
+                                <td colspan=2><i class="fa fa-clock-o m-r-5"></i>Starting Date : 01-Aug-2022</td>
+                                <td colspan=2><i class="fa fa-clock-o m-r-5"></i>End Date : 30-Dec-2022</td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                </div>
+           
+                <div class="timeline-item">
+                    <div>
+                        <figure class="avatar avatar-sm m-r-15 bring-forward">
+                            <span class="avatar-title bg-instagram rounded-circle">4</span>
+                        </figure>
+                    </div>
+                    <div>
+                    <h4 style="color:blue;">Task : Field experiments</h4>
+                       <table>
+                            <tr>
+                                <td colspan=2 style="color:green;"><b>Status : -- </b></td>
+                                <td colspan=2 style="color:green;">
+                                </td>
+                            </tr>
+                         <tr>
+                            <td colspan=4><p class="m-b-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est iusto necessitatibus officia porro repellendus rerum. </p></td>
+                         </tr>
+                         <tr>
+                            <td colspan=2><i class="fa fa-clock-o m-r-5"></i>Starting Date : 01-Jan-2023</td>
+                            <td colspan=2><i class="fa fa-clock-o m-r-5"></i>End Date : 30-Apr-2023</td>
+                         </tr>
+                      </table>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div>
+                        <figure class="avatar avatar-sm m-r-15 bring-forward">
+                            <span class="avatar-title bg-instagram rounded-circle">5</span>
+                        </figure>
+                    </div>
+                    <div>
+                    <h4 style="color:blue;">Task : Report preparation & submission</h4>
+                       <table>
+                           <tr>
+                                <td colspan=2 style="color:green;"><b>Status : -- </b></td>
+                                <td colspan=2 style="color:green;">
+                                </td>
+                            </tr>
+
+                         <tr>
+                            <td colspan=4><p class="m-b-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est iusto necessitatibus officia porro repellendus rerum. </p></td>
+                         </tr>
+                         <tr>
+                            <td colspan=2><i class="fa fa-clock-o m-r-5"></i>Starting Date : 01-May-2023</td>
+                            <td colspan=2><i class="fa fa-clock-o m-r-5"></i>End Date : 30-Jun-2023</td>
+                         </tr>
+                      </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="review-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project Review Report</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table id="crcbooking" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Date : </td>
+                                <td><input type="date" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Review Details</td>
+                                <td><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Grade : </td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button class="btn btn-sm btn-success">Submit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="timeext-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Time Extention Request</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table id="crcbooking" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Date : </td>
+                                <td><input type="date" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Reason</td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button class="btn btn-sm btn-success">Submit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="taskcomp-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Task Completion Report</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table id="crcbooking" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Completed On : </td>
+                                <td><input type="date" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Report Summary</td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                             <tr>
+                                <td>Files</td>
+                                <td><input type="file" class="form-control-file" id="exampleFormControlFile1"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button class="btn btn-sm btn-success">Submit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+</div>

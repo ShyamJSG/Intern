@@ -1,0 +1,69 @@
+﻿@model TNAUPMS.masinstitute
+@{
+    <div class="modal-content">
+        <form method="post" asp-page-handler="Edit">
+
+            <div class="modal-body">
+                <table id="crcbooking" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Code</td>
+                            <td>
+                                <input type="hidden" asp-for="@Model.id" id="id" name="id">
+                                <input type="text" data-val="true" asp-for="@Model.code" data-val-required="The Code is required." class="form-control" id="code" name="code">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Name</td>
+                            <td>
+                                <input type="text" data-val="true" asp-for="@Model.instituteName" data-val-required="The Institute Name is required." class="form-control" id="InstituteName" name="InstituteName">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>
+                                <input type="text" data-val="true" asp-for="@Model.address" data-val-required="The Address is required." class="form-control" id="Address" name="Address">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td>
+                                <input type="text" data-val="true" asp-for="@Model.city" data-val-required="The City Name is required." class="form-control" id="City" name="City">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>District</td>
+                            <td>
+                                <input type="text" data-val="true" asp-for="@Model.district" data-val-required="The District Name is required." class="form-control" id="District" name="District">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pincode</td>
+                            <td>
+                                <input type="text" data-val="true" asp-for="@Model.pincode" data-val-required="The Pin Number is required." class="form-control" id="Pincode" name="Pincode">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Head Name</td>
+                            <td>
+                                <input type="text" data-val="true" asp-for="@Model.principalName" data-val-required="The Principal Name is required." class="form-control" id="PrincipalName" name="PrincipalName">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Contact No</td>
+                            <td>
+                                <input type="text" data-val="true" asp-for="@Model.principalMobileNo" data-val-required="The Mobile No is required." class="form-control" id="principalMobileNo" name="principalMobileNo">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="btn btn-sm btn-success">Submit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </form>
+    </div>
+}

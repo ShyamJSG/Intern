@@ -1,0 +1,60 @@
+﻿@page "{handler?}/{ProjectId:int?}" 
+@model TNAUPMS.Pages.ProjectList.IndexModel
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+@{ Layout = "../Shared/_Layoutadmin.cshtml"; }
+<div class="header-body">
+    <div class="header-body-left">
+        <h3 class="page-title">Project Master</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div style="margin:15px;">
+                    <a class="btn btn-sm btn-primary" style="color:white;" href="projectadd">New Project</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">SNo</th>
+                                <th scope="col">ProjectCode</th>
+                                <th scope="col">ProjectName</th>
+                                <th scope="col">Investigator</th>
+                                <th scope="col">Deparment</th>
+                                <th scope="col">Institute</th>
+                                <th scope="col">Funder</th>
+                                <th scope="col">Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null)
+                            {
+                                var i = 1;
+                            foreach (var item in Model.pjModel)
+                            {
+
+                            <tr>
+                                <td style="text-align: center;">@(i.ToString())</td>
+                                <td>@Html.DisplayFor(modelItem => item.projectCode)</td>
+                                <td>@Html.DisplayFor(modelItem => item.projectName)</td>
+                                <td>@Html.DisplayFor(modelItem => item.investigatorName)</td>
+                                <td>@Html.DisplayFor(modelItem => item.deptName)</td>
+                                <td>@Html.DisplayFor(modelItem => item.instName)</td>
+                                <td>@Html.DisplayFor(modelItem => item.faName)</td>
+                                <td style="text-align: center;"><a class="btn btn-sm btn-success" asp-page="ProjectEdit" asp-route-ProjectId="@item.id" >Edit</a> </td>
+                                @{ i++;}
+                            </tr>
+                            }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

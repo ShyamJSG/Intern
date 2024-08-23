@@ -1,0 +1,38 @@
+﻿@model dynamic
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "LoginLayout";
+}
+
+<h1 align="center">Register</h1>
+<br>
+<div class="box" align="center">
+    <form asp-action="Register" method="post" class="form">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" name="username" class="form-control-focus" required />
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" name="password" class="form-control-focus" required />
+        </div>
+        <br>
+        <span class="form-group">
+            <input type="submit" value="Register" class="btn btn-primary" />
+        </span>
+    </form>
+</div>
+
+@if (ViewData.ModelState != null && ViewData.ModelState.ErrorCount > 0)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}

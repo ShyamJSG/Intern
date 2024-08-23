@@ -1,0 +1,790 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupmsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|solutionrelative:tnaupmsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupmsapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|solutionrelative:tnaupmsapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\transaction\\trnprojecttaskextensioninforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\transaction\\trnprojecttaskextensioninforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupmsapi\\controllers\\transaction\\projecttaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|solutionrelative:tnaupmsapi\\controllers\\transaction\\projecttaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\transaction\\trnprojecttaskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\transaction\\trnprojecttaskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\transaction\\trnprojecttask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\transaction\\trnprojecttask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\transaction\\trnprojectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\transaction\\trnprojectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupmsapi\\controllers\\transaction\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|solutionrelative:tnaupmsapi\\controllers\\transaction\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\config\\configuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\config\\configuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\transaction\\trnproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\transaction\\trnproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupmsapi\\controllers\\tnaupmsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|solutionrelative:tnaupmsapi\\controllers\\tnaupmsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\transaction\\trnprojecttaskextensioninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\transaction\\trnprojecttaskextensioninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\transaction\\trnprojecttaskreportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\transaction\\trnprojecttaskreportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\transaction\\trnprojecttaskreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\transaction\\trnprojecttaskreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\transaction\\trnprojectcoinvestigatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\transaction\\trnprojectcoinvestigatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\master\\masprojecttyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\master\\masprojecttyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\master\\masfundingagencyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\master\\masfundingagencyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\master\\masfundingagency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\master\\masfundingagency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\master\\masinvestigatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\master\\masinvestigatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\master\\masinstituterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\master\\masinstituterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\master\\masinvestigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\master\\masinvestigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\master\\masinstitute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\master\\masinstitute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupmsapi\\controllers\\master\\projecttypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|solutionrelative:tnaupmsapi\\controllers\\master\\projecttypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\master\\masdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\master\\masdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\master\\masdepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\master\\masdepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupmsapi\\controllers\\master\\unitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|solutionrelative:tnaupmsapi\\controllers\\master\\unitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupmsapi\\controllers\\master\\institutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|solutionrelative:tnaupmsapi\\controllers\\master\\institutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\master\\masunitsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\master\\masunitsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\master\\masunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\master\\masunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupmsapi\\controllers\\master\\investigatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|solutionrelative:tnaupmsapi\\controllers\\master\\investigatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupmsapi\\controllers\\master\\sciencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|solutionrelative:tnaupmsapi\\controllers\\master\\sciencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\master\\massciencerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\master\\massciencerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\master\\massciencemeetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\master\\massciencemeetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\master\\masprojectsubtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\master\\masprojectsubtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\master\\massciencemeet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\master\\massciencemeet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\master\\masscience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\master\\masscience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\master\\masprojecttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\master\\masprojecttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\master\\masprojectsubtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\master\\masprojectsubtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupmsapi\\controllers\\transaction\\projecttaskreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|solutionrelative:tnaupmsapi\\controllers\\transaction\\projecttaskreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupmsapi\\controllers\\master\\fundingagencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|solutionrelative:tnaupmsapi\\controllers\\master\\fundingagencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupmsapi\\controllers\\master\\sciencemeetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|solutionrelative:tnaupmsapi\\controllers\\master\\sciencemeetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupmsapi\\controllers\\master\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4531DB09-02C3-4613-A773-046D4F96A379}|TNAUPMSAPI\\TNAUPMS.WebApi.csproj|solutionrelative:tnaupmsapi\\controllers\\master\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\tnaupms.domains.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\tnaupms.domains.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\repositories\\transaction\\trnprojectdocumentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\repositories\\transaction\\trnprojectdocumentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\config\\configrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\config\\configrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\transaction\\trnprojectcoinvestigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\transaction\\trnprojectcoinvestigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|d:\\intern\\tnaupms\\tnaupmsapi\\tnaupms.domains\\models\\transaction\\trnprojectdocuments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41672DBA-3A2E-4D2F-8257-724BCCB21691}|TNAUPMS.Domains\\TNAUPMS.Domains.csproj|solutionrelative:tnaupms.domains\\models\\transaction\\trnprojectdocuments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "trnprojecttask.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Transaction\\trnprojecttask.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Transaction\\trnprojecttask.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Transaction\\trnprojecttask.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Transaction\\trnprojecttask.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA6wB8AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:23:32.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjectTaskController.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Transaction\\ProjectTaskController.cs",
+              "RelativeDocumentMoniker": "TNAUPMSAPI\\Controllers\\Transaction\\ProjectTaskController.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Transaction\\ProjectTaskController.cs",
+              "RelativeToolTip": "TNAUPMSAPI\\Controllers\\Transaction\\ProjectTaskController.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAnwGgAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T10:11:31.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Repository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Repository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Repository.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAhwFQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T08:59:14.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "TNAUPMSAPI\\appsettings.json",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\appsettings.json",
+              "RelativeToolTip": "TNAUPMSAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-02T09:15:57.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "trnproject.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Transaction\\trnproject.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Transaction\\trnproject.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Transaction\\trnproject.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Transaction\\trnproject.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA9wAkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T11:43:54.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "TNAUPMSAPI\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "TNAUPMSAPI\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwFQBAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T06:36:27.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "trnprojectRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Transaction\\trnprojectRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Transaction\\trnprojectRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Transaction\\trnprojectRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Transaction\\trnprojectRepository.cs",
+              "ViewState": "AQIAALIBAAAAAAAAAAAAwCEBAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T11:40:42.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Transaction\\ProjectController.cs",
+              "RelativeDocumentMoniker": "TNAUPMSAPI\\Controllers\\Transaction\\ProjectController.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Transaction\\ProjectController.cs",
+              "RelativeToolTip": "TNAUPMSAPI\\Controllers\\Transaction\\ProjectController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAWwCAAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T09:42:50.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "trnprojecttaskextensioninfoRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Transaction\\trnprojecttaskextensioninfoRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Transaction\\trnprojecttaskextensioninfoRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Transaction\\trnprojecttaskextensioninfoRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Transaction\\trnprojecttaskextensioninfoRepository.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAEwCIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:27:23.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "trnprojecttaskRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Transaction\\trnprojecttaskRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Transaction\\trnprojecttaskRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Transaction\\trnprojecttaskRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Transaction\\trnprojecttaskRepository.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAMwFAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:27:53.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConfigUser.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Config\\ConfigUser.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Config\\ConfigUser.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Config\\ConfigUser.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Config\\ConfigUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:21:51.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "masprojecttypeRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masprojecttypeRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Master\\masprojecttypeRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masprojecttypeRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Master\\masprojecttypeRepository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwB0AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:25:41.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TNAUPMSAPIController.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\TNAUPMSAPIController.cs",
+              "RelativeDocumentMoniker": "TNAUPMSAPI\\Controllers\\TNAUPMSAPIController.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\TNAUPMSAPIController.cs",
+              "RelativeToolTip": "TNAUPMSAPI\\Controllers\\TNAUPMSAPIController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAApwBwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T09:21:52.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "trnprojecttaskextensioninfo.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Transaction\\trnprojecttaskextensioninfo.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Transaction\\trnprojecttaskextensioninfo.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Transaction\\trnprojecttaskextensioninfo.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Transaction\\trnprojecttaskextensioninfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:24:09.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "masfundingagencyRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masfundingagencyRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Master\\masfundingagencyRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masfundingagencyRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Master\\masfundingagencyRepository.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:24:38.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "trnprojecttaskreport.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Transaction\\trnprojecttaskreport.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Transaction\\trnprojecttaskreport.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Transaction\\trnprojecttaskreport.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Transaction\\trnprojecttaskreport.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwAkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:24:19.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "masfundingagency.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masfundingagency.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Master\\masfundingagency.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masfundingagency.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Master\\masfundingagency.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:22:19.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "trnprojecttaskreportRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Transaction\\trnprojecttaskreportRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Transaction\\trnprojecttaskreportRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Transaction\\trnprojecttaskreportRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Transaction\\trnprojecttaskreportRepository.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAcwF0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T07:42:56.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "trnprojectcoinvestigatorRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Transaction\\trnprojectcoinvestigatorRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Transaction\\trnprojectcoinvestigatorRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Transaction\\trnprojectcoinvestigatorRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Transaction\\trnprojectcoinvestigatorRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T07:42:54.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "masinvestigator.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masinvestigator.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Master\\masinvestigator.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masinvestigator.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Master\\masinvestigator.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwAkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:22:51.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "masinvestigatorRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masinvestigatorRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Master\\masinvestigatorRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masinvestigatorRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Master\\masinvestigatorRepository.cs",
+              "ViewState": "AQIAAKMAAAAAAAAAAAAswJYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:25:12.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "masinstitute.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masinstitute.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Master\\masinstitute.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masinstitute.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Master\\masinstitute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:22:35.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "masdepartment.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masdepartment.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Master\\masdepartment.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masdepartment.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Master\\masdepartment.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA1wAgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:22:07.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProjectTypeController.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\ProjectTypeController.cs",
+              "RelativeDocumentMoniker": "TNAUPMSAPI\\Controllers\\Master\\ProjectTypeController.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\ProjectTypeController.cs",
+              "RelativeToolTip": "TNAUPMSAPI\\Controllers\\Master\\ProjectTypeController.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAASwHIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T09:39:41.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "masunits.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masunits.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Master\\masunits.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masunits.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Master\\masunits.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T08:47:06.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "masinstituteRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masinstituteRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Master\\masinstituteRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masinstituteRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Master\\masinstituteRepository.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwBsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T08:53:07.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "masdepartmentRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masdepartmentRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Master\\masdepartmentRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masdepartmentRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Master\\masdepartmentRepository.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T08:36:38.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "InstitutionController.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\InstitutionController.cs",
+              "RelativeDocumentMoniker": "TNAUPMSAPI\\Controllers\\Master\\InstitutionController.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\InstitutionController.cs",
+              "RelativeToolTip": "TNAUPMSAPI\\Controllers\\Master\\InstitutionController.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAWwDQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T06:14:36.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "masscienceRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masscienceRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Master\\masscienceRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masscienceRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Master\\masscienceRepository.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAApwD4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T07:35:58.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UnitsController.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\UnitsController.cs",
+              "RelativeDocumentMoniker": "TNAUPMSAPI\\Controllers\\Master\\UnitsController.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\UnitsController.cs",
+              "RelativeToolTip": "TNAUPMSAPI\\Controllers\\Master\\UnitsController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAhwCwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T08:48:19.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "masunitsRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masunitsRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Master\\masunitsRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masunitsRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Master\\masunitsRepository.cs",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAgwJgAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T06:13:39.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ScienceController.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\ScienceController.cs",
+              "RelativeDocumentMoniker": "TNAUPMSAPI\\Controllers\\Master\\ScienceController.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\ScienceController.cs",
+              "RelativeToolTip": "TNAUPMSAPI\\Controllers\\Master\\ScienceController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAIA5wDQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T06:42:32.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "InvestigatorController.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\InvestigatorController.cs",
+              "RelativeDocumentMoniker": "TNAUPMSAPI\\Controllers\\Master\\InvestigatorController.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\InvestigatorController.cs",
+              "RelativeToolTip": "TNAUPMSAPI\\Controllers\\Master\\InvestigatorController.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAlwC8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:30:12.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "massciencemeetRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\massciencemeetRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Master\\massciencemeetRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\massciencemeetRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Master\\massciencemeetRepository.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwDEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T08:42:09.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "masprojectsubtypeRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masprojectsubtypeRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Master\\masprojectsubtypeRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Master\\masprojectsubtypeRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Master\\masprojectsubtypeRepository.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAADwv2cAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T09:47:33.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "massciencemeet.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\massciencemeet.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Master\\massciencemeet.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\massciencemeet.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Master\\massciencemeet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T07:40:22.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "masscience.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masscience.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Master\\masscience.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masscience.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Master\\masscience.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T06:32:28.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "masprojecttype.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masprojecttype.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Master\\masprojecttype.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masprojecttype.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Master\\masprojecttype.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:23:00.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "masprojectsubtype.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masprojectsubtype.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Master\\masprojectsubtype.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Master\\masprojectsubtype.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Master\\masprojectsubtype.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T09:47:13.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ProjectTaskReportController.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Transaction\\ProjectTaskReportController.cs",
+              "RelativeDocumentMoniker": "TNAUPMSAPI\\Controllers\\Transaction\\ProjectTaskReportController.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Transaction\\ProjectTaskReportController.cs",
+              "RelativeToolTip": "TNAUPMSAPI\\Controllers\\Transaction\\ProjectTaskReportController.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAwGwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:42:15.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "FundingAgencyController.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\FundingAgencyController.cs",
+              "RelativeDocumentMoniker": "TNAUPMSAPI\\Controllers\\Master\\FundingAgencyController.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\FundingAgencyController.cs",
+              "RelativeToolTip": "TNAUPMSAPI\\Controllers\\Master\\FundingAgencyController.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAAwHYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T06:48:56.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ConfigRole.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Config\\ConfigRole.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Config\\ConfigRole.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Config\\ConfigRole.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Config\\ConfigRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:21:29.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "trnprojectdocuments.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Transaction\\trnprojectdocuments.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Transaction\\trnprojectdocuments.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Transaction\\trnprojectdocuments.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Transaction\\trnprojectdocuments.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:23:23.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "trnprojectcoinvestigator.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Transaction\\trnprojectcoinvestigator.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Models\\Transaction\\trnprojectcoinvestigator.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Models\\Transaction\\trnprojectcoinvestigator.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Models\\Transaction\\trnprojectcoinvestigator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T04:23:15.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ScienceMeetController.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\ScienceMeetController.cs",
+              "RelativeDocumentMoniker": "TNAUPMSAPI\\Controllers\\Master\\ScienceMeetController.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\ScienceMeetController.cs",
+              "RelativeToolTip": "TNAUPMSAPI\\Controllers\\Master\\ScienceMeetController.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAewGIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T07:40:38.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "TNAUPMSAPI\\Controllers\\Master\\DepartmentController.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMSAPI\\Controllers\\Master\\DepartmentController.cs",
+              "RelativeToolTip": "TNAUPMSAPI\\Controllers\\Master\\DepartmentController.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAgwFkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T06:48:46.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "TNAUPMS.Domains.csproj",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\TNAUPMS.Domains.csproj",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\TNAUPMS.Domains.csproj",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\TNAUPMS.Domains.csproj",
+              "RelativeToolTip": "TNAUPMS.Domains\\TNAUPMS.Domains.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-09T06:33:37.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "trnprojectdocumentsRepository.cs",
+              "DocumentMoniker": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Transaction\\trnprojectdocumentsRepository.cs",
+              "RelativeDocumentMoniker": "TNAUPMS.Domains\\Repositories\\Transaction\\trnprojectdocumentsRepository.cs",
+              "ToolTip": "D:\\Intern\\TNAUPMS\\TNAUPMSAPI\\TNAUPMS.Domains\\Repositories\\Transaction\\trnprojectdocumentsRepository.cs",
+              "RelativeToolTip": "TNAUPMS.Domains\\Repositories\\Transaction\\trnprojectdocumentsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T07:42:52.693Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

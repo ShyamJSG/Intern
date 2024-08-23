@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Intern\\Math Quiz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3146ECBE-2993-49EF-8452-17429375B22B}|Math Quiz\\Math Quiz.csproj|d:\\intern\\math quiz\\math quiz\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3146ECBE-2993-49EF-8452-17429375B22B}|Math Quiz\\Math Quiz.csproj|solutionrelative:math quiz\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3146ECBE-2993-49EF-8452-17429375B22B}|Math Quiz\\Math Quiz.csproj|D:\\Intern\\Math Quiz\\math quiz\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3146ECBE-2993-49EF-8452-17429375B22B}|Math Quiz\\Math Quiz.csproj|solutionrelative:math quiz\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Intern\\Math Quiz\\Math Quiz\\Form1.cs",
+              "RelativeDocumentMoniker": "Math Quiz\\Form1.cs",
+              "ToolTip": "D:\\Intern\\Math Quiz\\Math Quiz\\Form1.cs",
+              "RelativeToolTip": "Math Quiz\\Form1.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAgwDIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T05:42:04.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Intern\\Math Quiz\\Math Quiz\\Form1.cs",
+              "RelativeDocumentMoniker": "Math Quiz\\Form1.cs",
+              "ToolTip": "D:\\Intern\\Math Quiz\\Math Quiz\\Form1.cs [Design]",
+              "RelativeToolTip": "Math Quiz\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T05:41:52.289Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

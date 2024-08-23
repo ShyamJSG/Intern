@@ -1,0 +1,205 @@
+﻿@page
+@model TNAUPMS.Pages.ProjectTask.IndexModel
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+@{
+    Layout = "../Shared/_Layoutadmin.cshtml";
+}
+<div class="header-body">
+    <div class="header-body-left">
+        <table style="width:100%">
+            <tr>
+                <td style="width:10%"><form method="post" asp-page-handler="Back"><button class="btn btn-sm btn-primary">Back</button></form></td>
+                <td style="width:80%; text-align:center;"><h3 class="page-title">Project Task Information</h3></td>
+                <td style="width:10%"></td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <table style="border:none; width:100%">
+                    <tr style="border:none; width:100%">
+                        <td style="width:15%"><label>Project Code :</label></td>
+                        <td style="width:35%"><input type="text" readonly class="form-control-plaintext" value="@Model.projectModel.projectCode"></td>
+                        <td style="width:15%"><label>Project Name :</label></td>
+                        <td style="width:35%"><input type="text" readonly class="form-control-plaintext" value="@Model.projectModel.projectName"></td>
+                    </tr>
+
+                    <tr style="border:none; width:100%">
+                        <td style="width:15%"><label>Investigator:</label></td>
+                        <td style="width:35%"><input type="text" readonly class="form-control-plaintext" value="@Model.projectModel.investigatorName"></td>
+                        <td style="width:15%"><label>Instituion Name :</label></td>
+                        <td style="width:35%"><input type="text" readonly class="form-control-plaintext" value="@Model.projectModel.instName"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div style="margin:5px;">
+            <button class="btn btn-sm btn-primary booking" data-toggle="modal" data-target="#division-modal">New Task</button>
+        </div>
+        <br>
+        <span>@Model.displaymsg</span>
+        <div class="table-responsive">
+            <table class="table">
+                <thead style="background-color: #1c471c; color: #fff;">
+                    <tr>
+                        <th scope="col">SNo</th>
+                        <th scope="col">Code</th>
+                        <th scope="col">Task Name</th>
+                        <th scope="col">Assigned To</th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">End Date</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Option</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null)
+                    {
+                        var i = 1;
+                        foreach (var item in Model.taskModel)
+                        {
+
+                            <tr>
+                                <td style="text-align: center;">@(i.ToString())</td>
+                                <td>@Html.DisplayFor(modelItem => item.taskCode)</td>
+                                <td>@Html.DisplayFor(modelItem => item.taskName)</td>
+                                <td>@Html.DisplayFor(modelItem => item.taskOwner)</td>
+                                <td>@Html.DisplayFor(modelItem => item.startDate)</td>
+                                <td>@Html.DisplayFor(modelItem => item.endDate)</td>
+                                <td>@Html.DisplayFor(modelItem => item.activeStatus)</td>
+                                <td style="text-align: center;">
+                                    <button class="btn btn-sm btn-primary details" data-id="@item.id" data-bs-toggle="modal" data-bs-target="#details-modal"><i class="fa fa-edit"></i></button>
+                                    <form method="post" asp-page="Index" asp-route-id="@item.id" asp-page-handler="Delete" onsubmit="return jQueryModalDelete(this)" class="d-inline">
+                                        <button type="submit" class="btn btn-sm btn-danger text-white"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                    </form>
+                                </td>
+                                @{
+                                    i++;
+                                }
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="details-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Task Information</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="detail-modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<form method="post" asp-page-handler="Create">
+    <div class="modal fade" tabindex="-1" role="dialog" id="division-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">New Task Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table id="institution" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Task Code</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.TaskCode" data-val-required="The Task Code is required." class="form-control" id="TaskCode" name="TaskCode">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Task Name</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.TaskName" data-val-required="The Task Name is required." class="form-control" id="TaskName" name="TaskName">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Task Information</td>
+                                <td>
+                                    <textarea style="width:100%" asp-for="@Model.TaskInformation"> </textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Start Date</td>
+                                <td>
+                                    <input type="date" data-val="true" asp-for="@Model.StartDate" data-val-required="The Start Date is required." class="form-control" id="StartDate" name="StartDate" min="2022-01-01" max="2030-12-31">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>End Date</td>
+                                <td>
+                                    <input type="date" data-val="true" asp-for="@Model.EndDate" data-val-required="The End Date is required." class="form-control" id="EndDate" name="EndDate" min="2022-01-01" max="2030-12-31">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Assigned To</td>
+                                <td>
+                                    <select class="form-control" style="width:100%" name="TaskOwner" asp-for="@Model.TaskOwner" asp-items="Model.OfficerList"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button class="btn btn-sm btn-success">Submit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<script src="~/assets/js/jquery.min.js"></script>
+<script src="~/assets/js/jquery.validate.js"></script>
+<script src="~/assets/js/jquery.validate.unobtrusive.js"></script>
+
+<script>
+    $(function () {
+        $('button.details').on('click', function () {
+             var id = $(this).attr('data-id');
+             $.ajax({
+            type: 'POST',
+            url: 'projecttask?handler=EditInfo',
+            data: {
+                id: id,
+            },
+            headers: {
+                RequestVerificationToken:
+                    $('input:hidden[name="__RequestVerificationToken"]').val()
+            },
+            success: function (result) {
+                $('.detail-modal-body').html(result);
+                $('#details-modal').modal('show');
+            }
+        });
+
+
+        });
+    })
+</script>

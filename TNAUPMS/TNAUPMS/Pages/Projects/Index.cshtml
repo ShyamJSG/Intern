@@ -1,0 +1,108 @@
+﻿@page
+@model TNAUPMS.Pages.Projects.IndexModel
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+
+@{
+    @if (Model.userRole =="Director")
+    {
+        Layout = "../Shared/_Layoutdirector.cshtml"; 
+    }
+    else if (Model.userRole =="Admin")
+    {
+         Layout = "../Shared/_Layoutadmin.cshtml"; 
+    }
+      else if (Model.userRole =="Investigator")
+    {
+         Layout = "../Shared/_Layoutuser.cshtml"; 
+    }
+}
+    
+
+<div class="header-body">
+    <div class="header-body-left">
+        <table style="width:100%">
+            <tr>
+                <td style="width:10%"></td>
+                <td style="width:80%; text-align:center;"><h3 class="page-title">Project Master</h3></td>
+                <td style="width:10%"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <table style="width:100%">
+                    <tr>
+                        <td style="width:20%"><div style="margin:15px;"><a class="btn btn-sm btn-primary" style="color:white;" href="projectadd">New Project</a></div></td>
+                        <td style="width:80%; text-align:right;">
+                            <button type="submit" class="btn btn-sm btn-primary text-white"><i class="fa fa-edit" aria-hidden="true"></i> </button>Edit
+                            <button type="submit" class="btn btn-sm btn-secondary text-white"><i class="fa fa-tasks" aria-hidden="true"></i> </button>Task
+                            <button type="submit" class="btn btn-sm btn-warning text-white"><i class="fa fa-th" aria-hidden="true"></i> </button>Report
+                        </td>
+                    </tr>
+                </table>
+                
+                <div class="table-responsive">
+                    <table class="table" >
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">Options</th>
+                                <th scope="col">SNo</th>
+                                <th scope="col">ProjectCode</th>
+                                <th scope="col">ProjectName</th>
+                                <th scope="col">Start Date</th>
+                                <th scope="col">End Date</th>
+                                <th scope="col">Investigator</th>
+                                <th scope="col">Deparment</th>
+                                <th scope="col">Institute</th>
+                                <th scope="col">Funder</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null)
+                            {
+                                var i = 1;
+                                foreach (var item in Model.pjModel)
+                                {
+
+                                    <tr>
+                                        <td style="text-align: center;">
+                                            <form method="post" asp-page="Index" asp-route-id="@item.id" asp-page-handler="Edit" class="d-inline">
+                                                <button type="submit" class="btn btn-sm btn-primary text-white"><i class="fa fa-edit" aria-hidden="true"></i> </button>
+                                            </form>
+
+                                            <form method="post" asp-page="Index" asp-route-id="@item.id" asp-page-handler="task" class="d-inline">
+                                                <button type="submit" class="btn btn-sm btn-secondary text-white"><i class="fa fa-tasks" aria-hidden="true"></i> </button>
+                                            </form>
+                                            <form method="post" asp-page="Index" asp-route-id="@item.id" asp-page-handler="report" class="d-inline">
+                                                <button type="submit" class="btn btn-sm btn-warning text-white"><i class="fa fa-th" aria-hidden="true"></i> </button>
+                                            </form>
+                                        </td>
+                                        <td style="text-align: center;">@(i.ToString())</td>
+                                        <td>@Html.DisplayFor(modelItem => item.projectCode)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.projectName)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.startDate)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.endDate)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.investigatorName)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.deptName)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.instName)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.faName)</td>
+                                        @{
+                                            i++;
+                                        }
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,377 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Intern\\WebAPIApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|d:\\intern\\webapiapplication\\webapiapplication\\controllers\\crudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|solutionrelative:webapiapplication\\controllers\\crudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|d:\\intern\\webapiapplication\\webapiapplication\\models\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|solutionrelative:webapiapplication\\models\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|d:\\intern\\webapiapplication\\webapiapplication\\models\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|solutionrelative:webapiapplication\\models\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|d:\\intern\\webapiapplication\\webapiapplication\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|solutionrelative:webapiapplication\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|d:\\intern\\webapiapplication\\webapiapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|solutionrelative:webapiapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|d:\\intern\\webapiapplication\\webapiapplication\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|solutionrelative:webapiapplication\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|d:\\intern\\webapiapplication\\webapiapplication\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|solutionrelative:webapiapplication\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|d:\\intern\\webapiapplication\\webapiapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|solutionrelative:webapiapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|d:\\intern\\webapiapplication\\webapimvc\\webapimvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|solutionrelative:webapimvc\\webapimvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|d:\\intern\\webapiapplication\\webapimvc\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|solutionrelative:webapimvc\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|d:\\intern\\webapiapplication\\webapiapplication\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|solutionrelative:webapiapplication\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|d:\\intern\\webapiapplication\\webapiapplication\\webapiapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|solutionrelative:webapiapplication\\webapiapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|d:\\intern\\webapiapplication\\webapimvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|solutionrelative:webapimvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|d:\\intern\\webapiapplication\\webapimvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|solutionrelative:webapimvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|d:\\intern\\webapiapplication\\webapimvc\\controllers\\crudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|solutionrelative:webapimvc\\controllers\\crudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|d:\\intern\\webapiapplication\\webapimvc\\views\\crud\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|solutionrelative:webapimvc\\views\\crud\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|d:\\intern\\webapiapplication\\webapimvc\\views\\crud\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|solutionrelative:webapimvc\\views\\crud\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|d:\\intern\\webapiapplication\\webapimvc\\views\\crud\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|solutionrelative:webapimvc\\views\\crud\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|d:\\intern\\webapiapplication\\webapimvc\\views\\crud\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|solutionrelative:webapimvc\\views\\crud\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|d:\\intern\\webapiapplication\\webapimvc\\models\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B88471C0-46DA-4577-B43B-1C0E89E32490}|WebApiMVC\\WebApiMVC.csproj|solutionrelative:webapimvc\\models\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|d:\\intern\\webapiapplication\\webapiapplication\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|solutionrelative:webapiapplication\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|d:\\intern\\webapiapplication\\webapiapplication\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763AB0C6-9DDB-4835-B43C-6922C6946592}|WebAPIApplication\\WebAPIApplication.csproj|solutionrelative:webapiapplication\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPIApplication\\Program.cs",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Program.cs",
+              "RelativeToolTip": "WebAPIApplication\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T05:52:32.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Response.cs",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Models\\Response.cs",
+              "RelativeDocumentMoniker": "WebApiMVC\\Models\\Response.cs",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Models\\Response.cs",
+              "RelativeToolTip": "WebApiMVC\\Models\\Response.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T05:16:13.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DAL.cs",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Models\\DAL.cs",
+              "RelativeDocumentMoniker": "WebAPIApplication\\Models\\DAL.cs",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Models\\DAL.cs",
+              "RelativeToolTip": "WebAPIApplication\\Models\\DAL.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAYwCgAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T09:02:41.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "WebAPIApplication\\Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "WebAPIApplication\\Controllers\\EmployeesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T04:46:52.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Response.cs",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Models\\Response.cs",
+              "RelativeDocumentMoniker": "WebAPIApplication\\Models\\Response.cs",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Models\\Response.cs",
+              "RelativeToolTip": "WebAPIApplication\\Models\\Response.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T05:40:14.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "WebAPIApplication\\Models\\Employee.cs",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Models\\Employee.cs",
+              "RelativeToolTip": "WebAPIApplication\\Models\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T05:24:32.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Registration.cs",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Models\\Registration.cs",
+              "RelativeDocumentMoniker": "WebAPIApplication\\Models\\Registration.cs",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Models\\Registration.cs",
+              "RelativeToolTip": "WebAPIApplication\\Models\\Registration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T06:19:17.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CrudController.cs",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Controllers\\CrudController.cs",
+              "RelativeDocumentMoniker": "WebAPIApplication\\Controllers\\CrudController.cs",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Controllers\\CrudController.cs",
+              "RelativeToolTip": "WebAPIApplication\\Controllers\\CrudController.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAkwBoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T08:48:19.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Crud.cs",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Models\\Crud.cs",
+              "RelativeDocumentMoniker": "WebAPIApplication\\Models\\Crud.cs",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Models\\Crud.cs",
+              "RelativeToolTip": "WebAPIApplication\\Models\\Crud.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T08:45:56.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WebAPIApplication.csproj",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\WebAPIApplication.csproj",
+              "RelativeDocumentMoniker": "WebAPIApplication\\WebAPIApplication.csproj",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\WebAPIApplication.csproj",
+              "RelativeToolTip": "WebAPIApplication\\WebAPIApplication.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-30T05:24:10.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Program.cs",
+              "RelativeDocumentMoniker": "WebApiMVC\\Program.cs",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Program.cs",
+              "RelativeToolTip": "WebApiMVC\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T05:36:15.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Views\\Crud\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebApiMVC\\Views\\Crud\\Create.cshtml",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Views\\Crud\\Create.cshtml",
+              "RelativeToolTip": "WebApiMVC\\Views\\Crud\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-31T05:27:52.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WebApiMVC.csproj",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\WebApiMVC.csproj",
+              "RelativeDocumentMoniker": "WebApiMVC\\WebApiMVC.csproj",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\WebApiMVC.csproj",
+              "RelativeToolTip": "WebApiMVC\\WebApiMVC.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-31T05:41:13.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApiMVC\\appsettings.json",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\appsettings.json",
+              "RelativeToolTip": "WebApiMVC\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-31T05:31:35.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CrudController.cs",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Controllers\\CrudController.cs",
+              "RelativeDocumentMoniker": "WebApiMVC\\Controllers\\CrudController.cs",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Controllers\\CrudController.cs",
+              "RelativeToolTip": "WebApiMVC\\Controllers\\CrudController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T05:17:48.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Views\\Crud\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApiMVC\\Views\\Crud\\Index.cshtml",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Views\\Crud\\Index.cshtml",
+              "RelativeToolTip": "WebApiMVC\\Views\\Crud\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-31T05:26:56.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Views\\Crud\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebApiMVC\\Views\\Crud\\Edit.cshtml",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Views\\Crud\\Edit.cshtml",
+              "RelativeToolTip": "WebApiMVC\\Views\\Crud\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-31T05:28:35.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Views\\Crud\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WebApiMVC\\Views\\Crud\\Delete.cshtml",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Views\\Crud\\Delete.cshtml",
+              "RelativeToolTip": "WebApiMVC\\Views\\Crud\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-31T05:29:27.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebAPIApplication\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebAPIApplication\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-31T04:56:39.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAPIApplication\\appsettings.json",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\appsettings.json",
+              "RelativeToolTip": "WebAPIApplication\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-30T05:05:41.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Crud.cs",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Models\\Crud.cs",
+              "RelativeDocumentMoniker": "WebApiMVC\\Models\\Crud.cs",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebApiMVC\\Models\\Crud.cs",
+              "RelativeToolTip": "WebApiMVC\\Models\\Crud.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T05:14:35.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RegistrationController.cs",
+              "DocumentMoniker": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Controllers\\RegistrationController.cs",
+              "RelativeDocumentMoniker": "WebAPIApplication\\Controllers\\RegistrationController.cs",
+              "ToolTip": "D:\\Intern\\WebAPIApplication\\WebAPIApplication\\Controllers\\RegistrationController.cs",
+              "RelativeToolTip": "WebAPIApplication\\Controllers\\RegistrationController.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAgwDoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T06:22:19.969Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

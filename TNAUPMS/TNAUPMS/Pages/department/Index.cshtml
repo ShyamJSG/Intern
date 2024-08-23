@@ -1,0 +1,159 @@
+﻿@page
+@model TNAUPMS.Pages.Directorate
+@{
+    ViewData["Title"] = "TNAU Project Monitoring System";
+}
+@{ Layout = "../Shared/_Layoutadmin.cshtml"; }
+<div class="header-body">
+    <div class="header-body-left">
+        <h3 class="page-title">Directorate Master</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div style="margin:5px;">
+                    <button class="btn btn-sm btn-primary booking" data-toggle="modal" data-target="#division-modal">New Directorate</button>
+                </div>
+                <span>@Model.displaymsg</span>
+                <br>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead style="background-color: #1c471c; color: #fff;">
+                            <tr>
+                                <th scope="col">Code</th>
+                                <th scope="col">Directorate Name</th>
+                                <th scope="col">Director Name</th>
+                                <th scope="col">Email Id</th>
+                                <th scope="col">Option</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null)
+                            {
+                                foreach (var item in Model.deptModel)
+                                {
+                                    <tr>
+                                        <td>@Html.DisplayFor(modelItem => item.code)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.departmentName)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.directorName)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.directorEmail)</td>
+                                        <td style="text-align: center;"><button class="btn btn-sm btn-success details" data-id="@item.id" data-bs-toggle="modal" data-bs-target="#details-modal"><i class="fa fa-edit"></i></button> 
+                                        </td>                                    
+                                    </tr>
+                                }
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="details-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Directorate Master</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="detail-modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<form method="post" asp-page-handler="Create">
+    <div class="modal fade" tabindex="-1" role="dialog" id="division-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Directorate Master</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table id="deptTable" style="font-size:14px;" class="table table-sm  table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Code</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.Code" data-val-required="The Code is required." class="form-control" id="Code" name="Code">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Directorate Name</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.DepartmentName" data-val-required="The Department Name is required." class="form-control" id="DepartmentName" name="DepartmentName">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Directorate Head</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.DirectorName" data-val-required="The Director is required." class="form-control" id="DirectorName" name="DirectorName">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email Id</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.DirectorEmail" data-val-required="The Email Id is required." class="form-control" id="DirectorEmail" name="DirectorEmail">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mobile No</td>
+                                <td>
+                                    <input type="text" data-val="true" asp-for="@Model.DirectorMobile" data-val-required="The Mobile No is required." class="form-control" id="DirectorMobile" name="DirectorMobile">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td><button class="btn btn-sm btn-success">Submit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<script src="~/assets/js/jquery.min.js"></script>
+<script src="~/assets/js/jquery.validate.js"></script>
+<script src="~/assets/js/jquery.validate.unobtrusive.js"></script>
+
+<script>
+    $(function () {
+        $('button.details').on('click', function () {
+             var id = $(this).attr('data-id');
+             $.ajax({
+            type: 'POST',
+            url: 'department?handler=EditInfo',
+            data: {
+                id: id,
+            },
+            headers: {
+                RequestVerificationToken:
+                    $('input:hidden[name="__RequestVerificationToken"]').val()
+            },
+            success: function (result) {
+                $('.detail-modal-body').html(result);
+                $('#details-modal').modal('show');
+            }
+        });
+
+
+        });
+    })
+</script>
